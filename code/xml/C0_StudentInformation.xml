@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Student Information</h:title>
+    <model>
+      <instance>
+        <data id="C0_StudentInformation_v1">
+          <C0_StudentID/>
+          <C0_LastName/>
+          <C0_FirstName/>
+          <C0_Gender/>
+          <C0_Grade/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/C0_StudentID:label">
+            <value>Enter the student's ID number:</value>
+          </text>
+          <text id="/data/C0_StudentID:hint">
+            <value/>
+          </text>
+          <text id="/data/C0_LastName:label">
+            <value>Enter the student's last name:</value>
+          </text>
+          <text id="/data/C0_LastName:hint">
+            <value/>
+          </text>
+          <text id="/data/C0_FirstName:label">
+            <value>Enter the student's first name:</value>
+          </text>
+          <text id="/data/C0_FirstName:hint">
+            <value/>
+          </text>
+          <text id="/data/C0_Gender:label">
+            <value>Enter the student's gender</value>
+          </text>
+          <text id="/data/C0_Gender:hint">
+            <value/>
+          </text>
+          <text id="/data/C0_Gender:option0">
+            <value>Male</value>
+          </text>
+          <text id="/data/C0_Gender:option1">
+            <value>Female</value>
+          </text>
+          <text id="/data/C0_Grade:label">
+            <value>Enter the student's grade level</value>
+          </text>
+          <text id="/data/C0_Grade:hint">
+            <value/>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/C0_StudentID" type="int" required="true()"/>
+      <bind nodeset="/data/C0_LastName" type="string"/>
+      <bind nodeset="/data/C0_FirstName" type="string"/>
+      <bind nodeset="/data/C0_Gender" type="select1"/>
+      <bind nodeset="/data/C0_Grade" type="int"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/C0_StudentID">
+      <label ref="jr:itext('/data/C0_StudentID:label')"/>
+      <hint ref="jr:itext('/data/C0_StudentID:hint')"/>
+    </input>
+    <input ref="/data/C0_LastName">
+      <label ref="jr:itext('/data/C0_LastName:label')"/>
+      <hint ref="jr:itext('/data/C0_LastName:hint')"/>
+    </input>
+    <input ref="/data/C0_FirstName">
+      <label ref="jr:itext('/data/C0_FirstName:label')"/>
+      <hint ref="jr:itext('/data/C0_FirstName:hint')"/>
+    </input>
+    <select1 ref="/data/C0_Gender">
+      <label ref="jr:itext('/data/C0_Gender:label')"/>
+      <hint ref="jr:itext('/data/C0_Gender:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C0_Gender:option0')"/>
+        <value>male</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C0_Gender:option1')"/>
+        <value>female</value>
+      </item>
+    </select1>
+    <input ref="/data/C0_Grade">
+      <label ref="jr:itext('/data/C0_Grade:label')"/>
+      <hint ref="jr:itext('/data/C0_Grade:hint')"/>
+    </input>
+  </h:body>
+</h:html>

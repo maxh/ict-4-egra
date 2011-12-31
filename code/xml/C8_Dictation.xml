@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Component 8: Dictation</h:title>
+    <model>
+      <instance>
+        <data id="C8_Dictation_v1">
+          <C8_Instructions/>
+          <C8_Picture/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/C8_Instructions:label">
+            <value>Component 8: Dictation</value>
+          </text>
+          <text id="/data/C8_Instructions:hint">
+            <value>Turn the student response form to the last, lined page for writing, and place it in front of the student.</value>
+          </text>
+          <text id="/data/C8_Picture:label">
+            <value>Please take a picture of the student's response sheet.</value>
+          </text>
+          <text id="/data/C8_Picture:hint">
+            <value/>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/C8_Instructions" type="string" readonly="true()"/>
+      <bind nodeset="/data/C8_Picture" type="binary" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/C8_Instructions">
+      <label ref="jr:itext('/data/C8_Instructions:label')"/>
+      <hint ref="jr:itext('/data/C8_Instructions:hint')"/>
+    </input>
+    <upload ref="/data/C8_Picture" mediatype="image/*">
+      <label ref="jr:itext('/data/C8_Picture:label')"/>
+      <hint ref="jr:itext('/data/C8_Picture:hint')"/>
+    </upload>
+  </h:body>
+</h:html>

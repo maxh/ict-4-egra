@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <title>ICT4EGRA: User Guide</title>
+      <style type="text/css">
+	p { width: 40em; }
+      </style>
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+   </head>
+   <body>
+     <h1>ICT4EGRA</h1>
+     <h2>User Guide</h2>
+     <a href="../index.html">Home page</a>
+     <h3>Step 1: Configure packaged software</h3>
+     I used these free tools:
+     <ul>
+       <li><a href="http://opendatakit.org/use/collect/">ODK
+       Collect</a></li>
+       <li><a href="http://opendatakit.org/use/aggregate/">ODK
+       Aggregate</a></li>      
+       <li><a href="http://code.google.com/appengine/">Google App
+       Engine</a></li>
+       <li><a href="http://www.google.com/google-d-s/spreadsheets/">Google
+       Spreadsheets</a></li>
+       <li><a href="http://developer.android.com/sdk/index.html">Google
+       Android SDK</a></li>
+     </ul>
+     <h3>Step 2: Build an XForms file for each EGRA component</h3>
+     <p>A complete EGRA instrument could be built and tested in a
+     single <a href="http://code.javarosa.org/wiki/xform">JavaRosa XForms</a> file, but I found it easiest to build and
+     test files for each EGRA component separately, and then later
+     combine the individual components into a single file.</p>
+
+     <p>For simple EGRA components, <a href="http://opendatakit.org/use/build/">ODK Build</a> can be used to generate
+     XForms XML. For more complex forms, build the forms manually
+     (with the help of
+     some <a href="http://www.gnu.org/software/emacs/">emacs</a>
+     macros and <a href="http://en.wikipedia.org/wiki/Shell_script">shell scripts</a>).</p>
+
+     <p>I built individual XForms files for each of the eight
+     components of the sample EGRA instrument in the <a href="https://www.eddataglobal.org/documents/index.cfm?fuseaction=pubDetail&ID=149">English EGRA Toolkit.</a></p>
+
+       <ul>
+	 <li>Component 0: Student Information
+	   [ <a href="../videos/c0.swf">demo</a> ]
+	   [ <a href="../code/xml/C0_StudentInformation.xml">.xml</a> ]</li>
+	 <li>Component 1: Letter Name Knowledge
+	   [ <a href="../videos/c1.swf">demo</a> ]
+	   [ <a href="../code/xml/C1_LetterNameKnowledge.xml">.xml</a> ]</li>
+	 <li>Component 2a: Phonemic Awareness
+	   [ <a href="../videos/c2a.swf">demo</a> ]
+	   [ <a href="../code/xml/C2a_PhonemicAwareness.xml">.xml</a> ]</li>
+	 <li>Component 2b: Initial Sound Identification
+	   [ <a href="../videos/c2b.swf">demo</a> ]
+	   [ <a href="../code/xml/C2b_PhonemicAwarenessISI.xml">.xml</a> ]</li>
+	 <li>Component 3: Letter Sound Knowledge
+	   [ <a href="../videos/c3.swf">demo</a> ]
+	   [ <a href="../code/xml/C3_LetterSoundKnowledge.xml">.xml</a> ]</li>
+	 <li>Component 4: Familiar Word Reading
+	   [ <a href="../videos/c4.swf">demo</a> ]
+	   [ <a href="../code/xml/C4_FamiliarWordReading.xml">.xml</a> ]</li>
+	 <li>Component 5: Unfamiliar Nonword Decoding
+	   [ <a href="../code/xml/C5_UnfamiliarNonwordDecoding.xml">.xml</a>
+	   ]</li>
+	 <li>Component 6: Passage Reading and Comprehension
+	   [ <a href="../videos/c6.swf">demo</a> ]
+	   [ <a href="../code/xml/C6_PassageReadingAndComprehension.xml">.xml</a>
+	   ]</li>
+	 <li>Component 7: Listening Comprehension
+	   [ <a href="../videos/c7.swf">demo</a> ]
+	   [ <a href="../code/xml/C7_ListeningComprehension.xml">.xml</a>
+	   ]</li>
+	 <li>Component 8: Dictation [ <a href="../code/xml/C8_Dictation.xml">
+	 .xml </a> ] </li>
+       </ul>
+
+     <p>I used shell scripts to help generate XML code. <a href="../code/shell/updateLetters.sh">updateLetters.sh</a> is script
+       that updates the letters in the Letter Name Knowledge XML file,
+       taking as input a file containing 100 letters separated by spaces
+       and the XForms file for component one. Such scripts allow the
+       same XML source code to be used in multiple ICT4EGRA
+       deployments by making the source code easily modifiable.</p>
+
+     <p>XForms files can be validated using <a href="http://code.google.com/p/opendatakit/wiki/ODKValidate">ODK Validate</a> and tested locally on
+       an <a href="http://developer.android.com/guide/developing/devices/index.html">Android virtual device.</a></p>
+
+     <p>The final component, dictation, requires the student to listen to a
+       series of words spoken aloud by the evaluator and write down
+       what he or she hears. Since the results for this component are
+       recorded on the student sheet rather than in the evaluator
+       sheet, the XForms file prompts the evaluator to take a picture
+       of the student response form using the mobile phone's
+       camera. The picture can be uploaded to the server with the rest
+       of the EGRA results and analyzed after the teams return from
+       the field, saving data entry time while at the schools
+       themselves.</p>
+
+     <p>I also built a short XForms survey which prompts the evaluator
+     to enter the
+       student's ID number (if any), last name, first name,
+       gender, and grade level. This information will link EGRA
+       results to individual students and hopefully allow teachers
+       and evaluators to better track and improve individual-level
+       learning outcomes.</p>
+     <h3>Step 3: Combine the XForms files for each component into a
+     single file</h3>
+     <p>The shell script <a href="../code/shell/addComponents.sh">addComponents.sh</a> automates the combination
+     process: it takes as input an EGRA survey template file
+     (<a href="../code/xml/EGRA_template.xml">EGRA_template.xml</a>) and multiple component XForms files. It then adds the
+     code from the component XForms files to the template file to
+     create a single XForms file with all components. This script
+     allows you to pick and choose which components to include in
+     the EGRA instrument.
+     <p>I built two final XForms files: <a href="../code/xml/EGRA_C1toC7.xml">EGRA_C1toC7.xml</a> (with
+     components 1 to 7) and <a href="../code/xml/EGRA_C8.xml">EGRA_C8.xml</a> (with component 8). Component
+     eight requires the evaluator to take a picture using the mobile
+     phone, and the camera software on Android is buggy. In testing,
+     component 8 would cause ODK Collect to crash, losing the data
+     collected from the first seven components. To isolate the effects
+     of this type of crash, components one to seven are administered
+     separately from component eight.</p>
+     <h3>Step 4: Send the XForms file to ODK Aggregate and ODK
+     Collect</h3>
+     <p>Once the XForms file is complete, ODK will take of most of the
+     technical work of capturing, storing, aggregating, and displaying
+     the data.</p>
+     <p>To enter the XForms file into the ODK system, upload
+     the final .xml file to ODK Aggregate using its web
+     interface. Then, from an ODK Collect instance on an Android
+     device, select "Manage Forms And Data" and
+     "Get New Forms" ODK Collect will find the XForms
+     file on ODK Aggregate and download it to the phone. Here's a <a href="../videos/Step4.swf">video demonstration</a>.</p> </p>
+     <h3>Step 5: Administer the assessment using ODK Collect</h3>
+     <p>Many phones can capture data for the same XForms file, so many
+     evaluators can use the system simultaneously. Results are stored
+     locally on the phone in an XML after the test is
+     administered. Each student's results are saved on the
+     phone's local memory by ODK Collect as separate results
+     files. Here's a <a href="../videos/Step5.swf">video
+     demonstration</a>.</p> 
+     <h3>Step 6: Send results from the phones to the server</h3>
+     <p>Results can be sent from the phone to the server either over a
+     3G mobile connection or through a wireless LAN connection. This
+     is an out-of-the-box ODK Collect feature. Results could also be
+     copied from the phone to a computer and then uploaded to the
+     server through the ODK Aggregate web interface. Here's a <a href="../videos/Step6.swf">video demonstration</a>.</p>
+     <h3>Step 7: Download and analyze the results</h3>
+     <p>The ODK Aggregate web interface allows users to view gathered
+     data online and download results in a comma-separated values
+     (.csv) file. This file format is standard so the results can be
+     analyzed using any common statistics software. For demonstration,
+     the author wrote a Google App Script function <a href="../code/gas/analyzeEGRAResults.txt">analyzeEGRAResults()</a>
+     for Google Spreadsheets to parse raw data, compute scores for
+     each component, and calculate averages across students for each
+     of the scores. Here's a <a href="../videos/Step7.swf">video demonstration</a>.</p>
+   </body>
+</html>

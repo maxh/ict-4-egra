@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Component 5: Unfamiliar Nonword Reading</h:title>
+    <model>
+      <instance>
+        <data id="C5_UnfamiliarNonwordReading_v1">
+          <C5_Instructions/>
+          <C5_Assessment/>
+          <C5_LastWord/>
+          <C5_Time>0</C5_Time>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/C5_Instructions:label">
+            <value>Component 5: Unfamiliar Nonword Reading</value>
+          </text>
+          <text id="/data/C5_Instructions:hint">
+            <value>Show the student the sheet of unfamiliar nonwords. Start the timer when the student reads the first word and mark correctly pronounced nonwords.
+
+After 60 seconds, say "Stop," and record the number of the final nonword read.</value>
+          </text>
+          <text id="/data/C5_Assessment:label">
+            <value>Select incorrectly pronounced words.</value>
+          </text>
+          <text id="/data/C5_Assessment:hint">
+            <value>Remember the number of the last word read or attempted.</value>
+          </text>
+          <text id="/data/C5_LastWord:label">
+            <value>Enter the number of the last word read or attempted</value>
+          </text>
+          <text id="/data/C5_LastWord:hint">
+            <value>Enter "0" for early finish if the student failed to correctly read the first 5 words; "50" if the student read all words</value>
+          </text>
+          <text id="/data/C5_Time:label">
+            <value>Enter the time left on the stopwatch in seconds</value>
+          </text>
+          <text id="/data/C5_Time:hint">
+            <value>0 to 60 seconds</value>
+          </text>
+          <text id="/data/C5_Assessment:word01">
+            <value>01: fut</value>
+          </text>
+	  <text id="/data/C5_Assessment:word02">
+	    <value>02: lus</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word03">
+	    <value>03: dit</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word04">
+	    <value>04: leb</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word05">
+	    <value>05: gak</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word06">
+	    <value>06: huz</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word07">
+	    <value>07: jod</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word08">
+	    <value>08: kib</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word09">
+	    <value>09: lek</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word10">
+	    <value>10: tob</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word11">
+	    <value>11: nom</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word12">
+	    <value>12: rop</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word13">
+	    <value>13: hig</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word14">
+	    <value>14: reg</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word15">
+	    <value>15: san</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word16">
+	    <value>16: tup</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word17">
+	    <value>17: ral</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word18">
+	    <value>18: wix</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word19">
+	    <value>19: nep</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word20">
+	    <value>20: nad</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word21">
+	    <value>21: lut</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word22">
+	    <value>22: yod</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word23">
+	    <value>23: sim</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word24">
+	    <value>24: tat</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word25">
+	    <value>25: sig</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word26">
+	    <value>26: en</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word27">
+	    <value>27: mon</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word28">
+	    <value>28: nup</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word29">
+	    <value>29: sen</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word30">
+	    <value>30: kad</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word31">
+	    <value>31: taw</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word32">
+	    <value>32: lew</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word33">
+	    <value>33: paf</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word34">
+	    <value>34: sal</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word35">
+	    <value>35: zuv</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word36">
+	    <value>36: ved</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word37">
+	    <value>37: kag</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word38">
+	    <value>38: vom</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word39">
+	    <value>39: riz</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word40">
+	    <value>40: gof</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word41">
+	    <value>41: maz</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word42">
+	    <value>42: kol</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word43">
+	    <value>43: ver</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word44">
+	    <value>44: et</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word45">
+	    <value>45: beb</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word46">
+	    <value>46: tib</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word47">
+	    <value>47: lef</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word48">
+	    <value>48: yag</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word49">
+	    <value>49: lim</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word50">
+	    <value>50: dov</value>
+	  </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/C5_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C5_Assessment" type="select"/>
+      <bind nodeset="/data/C5_LastWord" type="int" required="true()" constraint="(. &gt;= 0 and . &lt;= 50)"/>
+      <bind nodeset="/data/C5_Time" type="int" constraint="(. &gt;= 0 and . &lt;= 60)" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/C5_Instructions">
+      <label ref="jr:itext('/data/C5_Instructions:label')"/>
+      <hint ref="jr:itext('/data/C5_Instructions:hint')"/>
+    </input>
+    <select ref="/data/C5_Assessment">
+      <label ref="jr:itext('/data/C5_Assessment:label')"/>
+      <hint ref="jr:itext('/data/C5_Assessment:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C5_Assessment:word01')"/>
+        <value>01</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word02')"/>
+	<value>02</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word03')"/>
+	<value>03</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word04')"/>
+	<value>04</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word05')"/>
+	<value>05</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word06')"/>
+	<value>06</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word07')"/>
+	<value>07</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word08')"/>
+	<value>08</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word09')"/>
+	<value>09</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word10')"/>
+	<value>10</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word11')"/>
+	<value>11</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word12')"/>
+	<value>12</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word13')"/>
+	<value>13</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word14')"/>
+	<value>14</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word15')"/>
+	<value>15</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word16')"/>
+	<value>16</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word17')"/>
+	<value>17</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word18')"/>
+	<value>18</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word19')"/>
+	<value>19</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word20')"/>
+	<value>20</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word21')"/>
+	<value>21</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word22')"/>
+	<value>22</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word23')"/>
+	<value>23</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word24')"/>
+	<value>24</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word25')"/>
+	<value>25</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word26')"/>
+	<value>26</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word27')"/>
+	<value>27</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word28')"/>
+	<value>28</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word29')"/>
+	<value>29</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word30')"/>
+	<value>30</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word31')"/>
+	<value>31</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word32')"/>
+	<value>32</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word33')"/>
+	<value>33</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word34')"/>
+	<value>34</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word35')"/>
+	<value>35</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word36')"/>
+	<value>36</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word37')"/>
+	<value>37</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word38')"/>
+	<value>38</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word39')"/>
+	<value>39</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word40')"/>
+	<value>40</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word41')"/>
+	<value>41</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word42')"/>
+	<value>42</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word43')"/>
+	<value>43</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word44')"/>
+	<value>44</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word45')"/>
+	<value>45</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word46')"/>
+	<value>46</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word47')"/>
+	<value>47</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word48')"/>
+	<value>48</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word49')"/>
+	<value>49</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C5_Assessment:word50')"/>
+	<value>50</value>
+      </item>
+    </select>
+    <input ref="/data/C5_LastWord">
+      <label ref="jr:itext('/data/C5_LastWord:label')"/>
+      <hint ref="jr:itext('/data/C5_LastWord:hint')"/>
+    </input>
+    <input ref="/data/C5_Time">
+      <label ref="jr:itext('/data/C5_Time:label')"/>
+      <hint ref="jr:itext('/data/C5_Time:hint')"/>
+    </input>
+  </h:body>
+</h:html>

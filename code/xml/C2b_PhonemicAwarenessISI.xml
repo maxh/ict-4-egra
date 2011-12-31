@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Component 2b: Phonemic Awareness (ISI)</h:title>
+    <model>
+      <instance>
+        <data id="C2b_PhonemicAwarenessISI_v1">
+          <C2b_Instructions/>
+          <C2b_Word1/>
+          <C2b_Word2/>
+	  <C2b_Word3/>
+	  <C2b_Word4/>
+	  <C2b_Word5/>
+	  <C2b_Word6/>
+	  <C2b_Word7/>
+	  <C2b_Word8/>
+	  <C2b_Word9/>
+	  <C2b_Word10/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/C2b_Instructions:label">
+            <value>Component 2b: Phonemic Awareness (ISI)</value>
+          </text>
+          <text id="/data/C2b_Instructions:hint">
+            <value>This is the initial sound identification exercise. Ask the student "What is the first sound in ____?" Say each word twice and record the student's response as "correct," "incorrect," or "no response."</value>
+          </text>
+          <text id="/data/C2b_Words:correct">
+            <value>Correct</value>
+          </text>
+          <text id="/data/C2b_Words:incorrect">
+            <value>Incorrect</value>
+          </text>
+          <text id="/data/C2b_Words:noResponse">
+            <value>No Response</value>
+          </text>
+	  <text id="/data/C2b_Words:earlyStop">
+	    <value>Check here if the student did not answer any of the first five words correctly (ends exercise).</value>
+	  </text>	   
+          <text id="/data/C2b_Word1:label">
+            <value>Word 1: "map"</value>
+          </text>
+          <text id="/data/C2b_Word1:hint">
+            <value>/mmmm/</value>
+          </text>
+          <text id="/data/C2b_Word2:label">
+            <value>Word 2: "say"</value>
+          </text>
+          <text id="/data/C2b_Word2:hint">
+            <value>/sssss/</value>
+          </text>
+          <text id="/data/C2b_Word3:label">
+            <value>Word 3: "up"</value>
+          </text>
+          <text id="/data/C2b_Word3:hint">
+            <value>/uh/</value>
+          </text>
+          <text id="/data/C2b_Word4:label">
+            <value>Word 4: "go"</value>
+          </text>
+          <text id="/data/C2b_Word4:hint">
+            <value>/g'/</value>
+          </text>
+          <text id="/data/C2b_Word5:label">
+            <value>Word 5: "now"</value>
+          </text>
+          <text id="/data/C2b_Word5:hint">
+            <value>/nnnn/</value>
+          </text>
+          <text id="/data/C2b_Word6:label">
+            <value>Word 6: "can"</value>
+          </text>
+          <text id="/data/C2b_Word6:hint">
+            <value>/k/</value>
+          </text>
+          <text id="/data/C2b_Word7:label">
+            <value>Word 7: "fish"</value>
+          </text>
+          <text id="/data/C2b_Word7:hint">
+            <value>/ffff/</value>	   
+          </text>
+          <text id="/data/C2b_Word8:label">
+            <value>Word 8: "pot"</value>
+          </text>
+          <text id="/data/C2b_Word8:hint">
+            <value>/p'/</value>
+          </text>
+          <text id="/data/C2b_Word9:label">
+            <value>Word 9: "run"</value>
+          </text>
+          <text id="/data/C2b_Word9:hint">
+            <value>/rrrrr/</value>
+          </text>
+          <text id="/data/C2b_Word10:label">
+            <value>Word 10: "look"</value>
+          </text>
+          <text id="/data/C2b_Word10:hint">
+            <value>/lllll/</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/C2b_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C2b_Word1" type="select1" required="true()"/>
+      <bind nodeset="/data/C2b_Word2" type="select1" required="true()"/>
+      <bind nodeset="/data/C2b_Word3" type="select1" required="true()"/>
+      <bind nodeset="/data/C2b_Word4" type="select1" required="true()"/>
+      <bind nodeset="/data/C2b_Word5" type="select1" required="true()"/>
+      <bind nodeset="/data/C2b_Word6" type="select1" relevant="(not(selected(/data/C2b_Word5,'earlyStop')) )" required="true()"/>
+      <bind nodeset="/data/C2b_Word7" type="select1" relevant="(not(selected(/data/C2b_Word5,'earlyStop')) )" required="true()"/>
+      <bind nodeset="/data/C2b_Word8" type="select1" relevant="(not(selected(/data/C2b_Word5,'earlyStop')) )" required="true()"/>
+      <bind nodeset="/data/C2b_Word9" type="select1" relevant="(not(selected(/data/C2b_Word5,'earlyStop')) )" required="true()"/>
+      <bind nodeset="/data/C2b_Word10" type="select1" relevant="(not(selected(/data/C2b_Word5,'earlyStop')) )" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/C2b_Instructions">
+      <label ref="jr:itext('/data/C2b_Instructions:label')"/>
+      <hint ref="jr:itext('/data/C2b_Instructions:hint')"/>
+    </input>
+    <select1 ref="/data/C2b_Word1">
+      <label ref="jr:itext('/data/C2b_Word1:label')"/>
+      <hint ref="jr:itext('/data/C2b_Word1:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C2b_Word2">
+      <label ref="jr:itext('/data/C2b_Word2:label')"/>
+      <hint ref="jr:itext('/data/C2b_Word2:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C2b_Word3">
+      <label ref="jr:itext('/data/C2b_Word3:label')"/>
+      <hint ref="jr:itext('/data/C2b_Word3:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C2b_Word4">
+      <label ref="jr:itext('/data/C2b_Word4:label')"/>
+      <hint ref="jr:itext('/data/C2b_Word4:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C2b_Word5">
+      <label ref="jr:itext('/data/C2b_Word5:label')"/>
+      <hint ref="jr:itext('/data/C2b_Word5:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:earlyStop')"/>
+        <value>earlyStop</value>
+      </item>      
+    </select1>
+    <select1 ref="/data/C2b_Word6">
+      <label ref="jr:itext('/data/C2b_Word6:label')"/>
+      <hint ref="jr:itext('/data/C2b_Word6:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+        <value>incorrect</value>
+
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C2b_Word7">
+      <label ref="jr:itext('/data/C2b_Word7:label')"/>
+      <hint ref="jr:itext('/data/C2b_Word7:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C2b_Word8">
+      <label ref="jr:itext('/data/C2b_Word8:label')"/>
+      <hint ref="jr:itext('/data/C2b_Word8:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C2b_Word9">
+      <label ref="jr:itext('/data/C2b_Word9:label')"/>
+      <hint ref="jr:itext('/data/C2b_Word9:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C2b_Word10">
+      <label ref="jr:itext('/data/C2b_Word10:label')"/>
+      <hint ref="jr:itext('/data/C2b_Word10:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+  </h:body>
+</h:html>

@@ -1,0 +1,3821 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>EGRA C1 to C7</h:title>
+    <model>
+      <instance>
+        <data id="EGRA_C1toC7_v1">
+	  <!--START:C0_StudentInformation_v1-->
+          <C0_StudentID/>
+          <C0_LastName/>
+          <C0_FirstName/>
+          <C0_Gender/>
+          <C0_Grade/>
+	  <!--END:C0_StudentInformation_v1-->
+	  <!--START:C1_LetterNameKnowledge_v1-->
+          <C1_Instructions/>
+          <C1_Assessment/>
+          <C1_LastLetter/>
+          <C1_Time>0</C1_Time>
+	  <!--END:C1_LetterNameKnowledge_v1-->
+	  <!--START:C2a_PhonemicAwareness_v1-->
+          <C2a_Instructions/>
+          <C2a_Word1/>
+          <C2a_Word2/>
+          <C2a_Word3/>
+          <C2a_Word4/>
+          <C2a_Word5/>
+          <C2a_Word6/>
+          <C2a_Word7/>
+          <C2a_Word8/>
+          <C2a_Word9/>
+          <C2a_Word10/>
+	  <!--END:C2a_PhonemicAwareness_v1-->
+	  <!--START:C2b_PhonemicAwarenessISI_v1-->
+          <C2b_Instructions/>
+          <C2b_Word1/>
+          <C2b_Word2/>
+	  <C2b_Word3/>
+	  <C2b_Word4/>
+	  <C2b_Word5/>
+	  <C2b_Word6/>
+	  <C2b_Word7/>
+	  <C2b_Word8/>
+	  <C2b_Word9/>
+	  <C2b_Word10/>
+	  <!--END:C2b_PhonemicAwarenessISI_v1-->
+	  <!--START:C3_LetterSoundKnowledge_v1-->
+          <C3_Instructions/>
+          <C3_Assessment/>
+          <C3_LastLetter/>
+          <C3_Time>0</C3_Time>
+	  <!--END:C3_LetterSoundKnowledge_v1-->
+	  <!--START:4_Familiar_Word_Reading_v1-->
+          <C4_Instructions/>
+          <C4_Assessment/>
+          <C4_LastWord/>
+          <C4_Time>0</C4_Time>
+	  <!--END:4_Familiar_Word_Reading_v1-->
+	  <!--START:C5_UnfamiliarNonwordReading_v1-->
+          <C5_Instructions/>
+          <C5_Assessment/>
+          <C5_LastWord/>
+          <C5_Time>0</C5_Time>
+	  <!--END:C5_UnfamiliarNonwordReading_v1-->
+	  <!--START:C6_PassageReadingAndComprehension-->
+          <C6_Instructions/>
+          <C6_PassageWords/>
+          <C6_PassageLastWordRead/>
+          <C6_PassageReadingTime>0</C6_PassageReadingTime>
+          <C6_ComprehensionQuestion1/>
+	  <C6_ComprehensionQuestion2/>
+	  <C6_ComprehensionQuestion3/>
+	  <C6_ComprehensionQuestion4/>
+	  <!--END:C6_PassageReadingAndComprehension-->
+	  <!--START:C7_ListeningComprehension_v1-->
+          <C7_Instructions/>
+          <C7_Passage/>
+          <C7_Question1/>
+          <C7_Question2/>
+          <C7_Question3/>
+          <C7_Question4/>
+          <C7_Question5/>
+	  <!--END:C7_ListeningComprehension_v1-->
+	  <!--data-->
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+	  <!--START:C0_StudentInformation_v1-->
+          <text id="/data/C0_StudentID:label">
+            <value>Enter the student's ID number:</value>
+          </text>
+          <text id="/data/C0_StudentID:hint">
+            <value/>
+          </text>
+          <text id="/data/C0_LastName:label">
+            <value>Enter the student's last name:</value>
+          </text>
+          <text id="/data/C0_LastName:hint">
+            <value/>
+          </text>
+          <text id="/data/C0_FirstName:label">
+            <value>Enter the student's first name:</value>
+          </text>
+          <text id="/data/C0_FirstName:hint">
+            <value/>
+          </text>
+          <text id="/data/C0_Gender:label">
+            <value>Enter the student's gender</value>
+          </text>
+          <text id="/data/C0_Gender:hint">
+            <value/>
+          </text>
+          <text id="/data/C0_Gender:option0">
+            <value>Male</value>
+          </text>
+          <text id="/data/C0_Gender:option1">
+            <value>Female</value>
+          </text>
+          <text id="/data/C0_Grade:label">
+            <value>Enter the student's grade level</value>
+          </text>
+          <text id="/data/C0_Grade:hint">
+            <value/>
+          </text>
+	  <!--END:C0_StudentInformation_v1-->
+	  <!--START:C1_LetterNameKnowledge_v1-->
+          <text id="/data/C1_Instructions:label">
+            <value>Component 1: Letter Name Knowledge</value>
+          </text>
+          <text id="/data/C1_Instructions:hint">
+            <value>Start the timer when the child reads the first letter. There are checkboxes for each letter on the next page. Follow along with the child and check correct words. Count self-corrections as correct.
+
+You may uncheck letters after they have been checked.</value>
+          </text>
+          <text id="/data/C1_Assessment:label">
+            <value>Select all correctly pronounced letters.</value>
+          </text>
+          <text id="/data/C1_Assessment:hint">
+            <value>Remember the number of the last character read.</value>
+          </text>
+          <text id="/data/C1_LastLetter:label">
+            <value>Enter the number of the last character spoken</value>
+          </text>
+          <text id="/data/C1_LastLetter:hint">
+            <value>Enter "0" for early finish; "100" if the student read all letters</value>
+          </text>
+          <text id="/data/C1_Time:label">
+            <value>Enter the time left on the stopwatch in seconds</value>
+          </text>
+          <text id="/data/C1_Time:hint">
+            <value>Range: 0 to 60 seconds (enter 0 seconds if the student did not finish)</value>
+          </text>
+          <text id="/data/C1_Assessment:letter01">
+            <value>01: L</value>
+          </text>
+	  <text id="/data/C1_Assessment:letter02">
+	    <value>02: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter03">
+	    <value>03: h</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter04">
+	    <value>04: R</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter05">
+	    <value>05: S</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter06">
+	    <value>06: y</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter07">
+	    <value>07: E</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter08">
+	    <value>08: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter09">
+	    <value>09: n</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter10">
+	    <value>10: T</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter11">
+	    <value>11: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter12">
+	    <value>12: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter13">
+	    <value>13: T</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter14">
+	    <value>14: D</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter15">
+	    <value>15: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter16">
+	    <value>16: t</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter17">
+	    <value>17: a</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter18">
+	    <value>18: d</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter19">
+	    <value>19: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter20">
+	    <value>20: w</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter21">
+	    <value>21: h</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter22">
+	    <value>22: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter23">
+	    <value>23: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter24">
+	    <value>24: m</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter25">
+	    <value>25: U</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter26">
+	    <value>26: r</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter27">
+	    <value>27: L</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter28">
+	    <value>28: G</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter29">
+	    <value>29: R</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter30">
+	    <value>30: U</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter31">
+	    <value>31: g</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter32">
+	    <value>32: R</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter33">
+	    <value>33: B</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter34">
+	    <value>34: E</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter35">
+	    <value>35: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter36">
+	    <value>36: f</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter37">
+	    <value>37: m</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter38">
+	    <value>38: t</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter39">
+	    <value>39: s</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter40">
+	    <value>40: r</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter41">
+	    <value>41: S</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter42">
+	    <value>42: T</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter43">
+	    <value>43: C</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter44">
+	    <value>44: N</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter45">
+	    <value>45: p</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter46">
+	    <value>46: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter47">
+	    <value>47: F</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter48">
+	    <value>48: c</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter49">
+	    <value>49: a</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter50">
+	    <value>50: E</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter51">
+	    <value>51: y</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter52">
+	    <value>52: s</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter53">
+	    <value>53: Q</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter54">
+	    <value>54: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter55">
+	    <value>55: M</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter56">
+	    <value>56: C</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter57">
+	    <value>57: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter58">
+	    <value>58: t</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter59">
+	    <value>59: n</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter60">
+	    <value>60: P</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter61">
+	    <value>61: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter62">
+	    <value>62: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter63">
+	    <value>63: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter64">
+	    <value>64: s</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter65">
+	    <value>65: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter66">
+	    <value>66: F</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter67">
+	    <value>67: h</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter68">
+	    <value>68: u</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter69">
+	    <value>69: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter70">
+	    <value>70: t</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter71">
+	    <value>71: R</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter72">
+	    <value>72: q</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter73">
+	    <value>73: H</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter74">
+	    <value>74: b</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter75">
+	    <value>75: S</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter76">
+	    <value>76: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter77">
+	    <value>77: g</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter78">
+	    <value>78: m</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter79">
+	    <value>79: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter80">
+	    <value>80: L</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter81">
+	    <value>81: L</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter82">
+	    <value>82: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter83">
+	    <value>83: N</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter84">
+	    <value>84: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter85">
+	    <value>85: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter86">
+	    <value>86: o</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter87">
+	    <value>87: E</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter88">
+	    <value>88: r</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter89">
+	    <value>89: p</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter90">
+	    <value>90: X</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter91">
+	    <value>91: N</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter92">
+	    <value>92: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter93">
+	    <value>93: c</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter94">
+	    <value>94: D</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter95">
+	    <value>95: d</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter96">
+	    <value>96: I</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter97">
+	    <value>97: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter98">
+	    <value>98: j</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter99">
+	    <value>99: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter100">
+	    <value>100: n</value>
+	  </text>
+	  <!--END:C1_LetterNameKnowledge_v1-->
+	  <!--START:C2a_PhonemicAwareness_v1-->
+          <text id="/data/C2a_Instructions:label">
+            <value>Component 2a: Phonemic Awareness</value>
+          </text>
+          <text id="/data/C2a_Instructions:hint">
+            <value> At each step, please ask the student "What are the sounds in _______?" Say each word twice. Mark correctly identified sounds. Leave incorrectly identified or skipped sounds unchecked.</value>
+          </text>
+          <text id="/data/C2a_Word1:label">
+            <value>Word 1: "too"</value>
+          </text>
+          <text id="/data/C2a_Word1:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word1:sound0">
+            <value>/t/</value>
+          </text>
+          <text id="/data/C2a_Word1:sound1">
+            <value>/oo/</value>
+          </text>
+          <text id="/data/C2a_Word2:label">
+            <value>Word 2: "say"</value>
+          </text>
+          <text id="/data/C2a_Word2:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word2:sound0">
+            <value>/s/</value>
+          </text>
+          <text id="/data/C2a_Word2:sound1">
+            <value>/a/</value>
+          </text>
+          <text id="/data/C2a_Word3:label">
+            <value>Word 3: "up"</value>
+          </text>
+          <text id="/data/C2a_Word3:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word3:sound0">
+            <value>/u/</value>
+          </text>
+          <text id="/data/C2a_Word3:sound1">
+            <value>/p/</value>
+          </text>
+          <text id="/data/C2a_Word4:label">
+            <value>Word 4: "buy"</value>
+          </text>
+          <text id="/data/C2a_Word4:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word4:sound0">
+            <value>/b/</value>
+          </text>
+          <text id="/data/C2a_Word4:sound1">
+            <value>/i/</value>
+          </text>
+          <text id="/data/C2a_Word5:label">
+            <value>Word 5: "me"</value>
+          </text>
+          <text id="/data/C2a_Word5:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word5:sound0">
+            <value>/m/</value>
+          </text>
+          <text id="/data/C2a_Word5:sound1">
+            <value>/e/</value>
+          </text>
+          <text id="/data/C2a_Word5:sound2">
+            <value>Check here if the student had no correct response on the first five words (ends exercise).</value>
+          </text>
+          <text id="/data/C2a_Word6:label">
+            <value>Word 6: "set"</value>
+          </text>
+          <text id="/data/C2a_Word6:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word6:sound0">
+            <value>/s/</value>
+          </text>
+          <text id="/data/C2a_Word6:sound1">
+            <value>/e/</value>
+          </text>
+          <text id="/data/C2a_Word6:sound2">
+            <value>/t/</value>
+          </text>
+          <text id="/data/C2a_Word7:label">
+            <value>Word 7: "mop"</value>
+          </text>
+          <text id="/data/C2a_Word7:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word7:sound0">
+            <value>/m/</value>
+          </text>
+          <text id="/data/C2a_Word7:sound1">
+            <value>/o/</value>
+          </text>
+          <text id="/data/C2a_Word7:sound2">
+            <value>/p/</value>
+          </text>
+          <text id="/data/C2a_Word8:label">
+            <value>Word 8: "jam"</value>
+          </text>
+          <text id="/data/C2a_Word8:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word8:sound0">
+            <value>/j/</value>
+          </text>
+          <text id="/data/C2a_Word8:sound1">
+            <value>/a/</value>
+          </text>
+          <text id="/data/C2a_Word8:sound2">
+            <value>/m/</value>
+          </text>
+          <text id="/data/C2a_Word9:label">
+            <value>Word 9: "fish"</value>
+          </text>
+          <text id="/data/C2a_Word9:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word9:sound0">
+            <value>/f/</value>
+          </text>
+          <text id="/data/C2a_Word9:sound1">
+            <value>/i/</value>
+          </text>
+          <text id="/data/C2a_Word9:sound2">
+            <value>/sh/</value>
+          </text>
+          <text id="/data/C2a_Word10:label">
+            <value>Word 10: "cool"</value>
+          </text>
+          <text id="/data/C2a_Word10:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word10:sound0">
+            <value>/k/</value>
+          </text>
+          <text id="/data/C2a_Word10:sound1">
+            <value>/oo/</value>
+          </text>
+          <text id="/data/C2a_Word10:sound2">
+            <value>/l/</value>
+          </text>
+	  <!--END:C2a_PhonemicAwareness_v1-->
+	  <!--START:C2b_PhonemicAwarenessISI_v1-->
+          <text id="/data/C2b_Instructions:label">
+            <value>Component 2b: Phonemic Awareness (ISI)</value>
+          </text>
+          <text id="/data/C2b_Instructions:hint">
+            <value>This is the initial sound identification exercise. Ask the student "What is the first sound in ____?" Say each word twice and record the student's response as "correct," "incorrect," or "no response."</value>
+          </text>
+          <text id="/data/C2b_Words:correct">
+            <value>Correct</value>
+          </text>
+          <text id="/data/C2b_Words:incorrect">
+            <value>Incorrect</value>
+          </text>
+          <text id="/data/C2b_Words:noResponse">
+            <value>No Response</value>
+          </text>
+	  <text id="/data/C2b_Words:earlyStop">
+	    <value>Check here if the student did not answer any of the first five words correctly (ends exercise).</value>
+	  </text>	   
+          <text id="/data/C2b_Word1:label">
+            <value>Word 1: "map"</value>
+          </text>
+          <text id="/data/C2b_Word1:hint">
+            <value>/mmmm/</value>
+          </text>
+          <text id="/data/C2b_Word2:label">
+            <value>Word 2: "say"</value>
+          </text>
+          <text id="/data/C2b_Word2:hint">
+            <value>/sssss/</value>
+          </text>
+          <text id="/data/C2b_Word3:label">
+            <value>Word 3: "up"</value>
+          </text>
+          <text id="/data/C2b_Word3:hint">
+            <value>/uh/</value>
+          </text>
+          <text id="/data/C2b_Word4:label">
+            <value>Word 4: "go"</value>
+          </text>
+          <text id="/data/C2b_Word4:hint">
+            <value>/g'/</value>
+          </text>
+          <text id="/data/C2b_Word5:label">
+            <value>Word 5: "now"</value>
+          </text>
+          <text id="/data/C2b_Word5:hint">
+            <value>/nnnn/</value>
+          </text>
+          <text id="/data/C2b_Word6:label">
+            <value>Word 6: "can"</value>
+          </text>
+          <text id="/data/C2b_Word6:hint">
+            <value>/k/</value>
+          </text>
+          <text id="/data/C2b_Word7:label">
+            <value>Word 7: "fish"</value>
+          </text>
+          <text id="/data/C2b_Word7:hint">
+            <value>/ffff/</value>	   
+          </text>
+          <text id="/data/C2b_Word8:label">
+            <value>Word 8: "pot"</value>
+          </text>
+          <text id="/data/C2b_Word8:hint">
+            <value>/p'/</value>
+          </text>
+          <text id="/data/C2b_Word9:label">
+            <value>Word 9: "run"</value>
+          </text>
+          <text id="/data/C2b_Word9:hint">
+            <value>/rrrrr/</value>
+          </text>
+          <text id="/data/C2b_Word10:label">
+            <value>Word 10: "look"</value>
+          </text>
+          <text id="/data/C2b_Word10:hint">
+            <value>/lllll/</value>
+          </text>
+	  <!--END:C2b_PhonemicAwarenessISI_v1-->
+	  <!--START:C3_LetterSoundKnowledge_v1-->
+          <text id="/data/C3_Instructions:label">
+            <value>Component 3: Letter Sound Knowledge</value>
+          </text>
+          <text id="/data/C3_Instructions:hint">
+            <value>Ask the student to pronounce the sound of each letter on the laminated sheet. Mark correctly pronounced letter sounds.</value>
+          </text>
+          <text id="/data/C3_Assessment:label">
+            <value>Select correctly pronounced letter sounds.</value>
+          </text>
+          <text id="/data/C3_Assessment:hint">
+            <value>Remember the number of the last letter read.</value>
+          </text>
+          <text id="/data/C3_LastLetter:label">
+            <value>Enter the number of the last letter spoken</value>
+          </text>
+          <text id="/data/C3_LastLetter:hint">
+            <value>Enter "0" for early finish; "100" if the student read all letters</value>
+          </text>
+          <text id="/data/C3_Time:label">
+            <value>Enter the time left on the stopwatch</value>
+          </text>
+          <text id="/data/C3_Time:hint">
+            <value>0 to 60 seconds</value>
+          </text>
+          <text id="/data/C3_Assessment:letter01">
+            <value>01: L</value>
+          </text>
+	  <text id="/data/C3_Assessment:letter02">
+	    <value>02: i</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter03">
+	    <value>03: h</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter04">
+	    <value>04: R</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter05">
+	    <value>05: S</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter06">
+	    <value>06: y</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter07">
+	    <value>07: E</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter08">
+	    <value>08: O</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter09">
+	    <value>09: n</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter10">
+	    <value>10: T</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter11">
+	    <value>11: i</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter12">
+	    <value>12: e</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter13">
+	    <value>13: T</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter14">
+	    <value>14: D</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter15">
+	    <value>15: A</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter16">
+	    <value>16: t</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter17">
+	    <value>17: a</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter18">
+	    <value>18: d</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter19">
+	    <value>19: e</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter20">
+	    <value>20: w</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter21">
+	    <value>21: h</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter22">
+	    <value>22: O</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter23">
+	    <value>23: e</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter24">
+	    <value>24: m</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter25">
+	    <value>25: U</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter26">
+	    <value>26: r</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter27">
+	    <value>27: L</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter28">
+	    <value>28: G</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter29">
+	    <value>29: R</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter30">
+	    <value>30: U</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter31">
+	    <value>31: g</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter32">
+	    <value>32: R</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter33">
+	    <value>33: B</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter34">
+	    <value>34: E</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter35">
+	    <value>35: i</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter36">
+	    <value>36: f</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter37">
+	    <value>37: m</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter38">
+	    <value>38: t</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter39">
+	    <value>39: s</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter40">
+	    <value>40: r</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter41">
+	    <value>41: S</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter42">
+	    <value>42: T</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter43">
+	    <value>43: C</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter44">
+	    <value>44: N</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter45">
+	    <value>45: p</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter46">
+	    <value>46: A</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter47">
+	    <value>47: F</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter48">
+	    <value>48: c</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter49">
+	    <value>49: a</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter50">
+	    <value>50: E</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter51">
+	    <value>51: y</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter52">
+	    <value>52: s</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter53">
+	    <value>53: Q</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter54">
+	    <value>54: A</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter55">
+	    <value>55: M</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter56">
+	    <value>56: C</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter57">
+	    <value>57: O</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter58">
+	    <value>58: t</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter59">
+	    <value>59: n</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter60">
+	    <value>60: P</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter61">
+	    <value>61: e</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter62">
+	    <value>62: A</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter63">
+	    <value>63: e</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter64">
+	    <value>64: s</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter65">
+	    <value>65: O</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter66">
+	    <value>66: F</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter67">
+	    <value>67: h</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter68">
+	    <value>68: u</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter69">
+	    <value>69: A</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter70">
+	    <value>70: t</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter71">
+	    <value>71: R</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter72">
+	    <value>72: q</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter73">
+	    <value>73: H</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter74">
+	    <value>74: b</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter75">
+	    <value>75: S</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter76">
+	    <value>76: i</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter77">
+	    <value>77: g</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter78">
+	    <value>78: m</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter79">
+	    <value>79: i</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter80">
+	    <value>80: L</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter81">
+	    <value>81: L</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter82">
+	    <value>82: i</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter83">
+	    <value>83: N</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter84">
+	    <value>84: O</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter85">
+	    <value>85: e</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter86">
+	    <value>86: o</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter87">
+	    <value>87: E</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter88">
+	    <value>88: r</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter89">
+	    <value>89: p</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter90">
+	    <value>90: X</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter91">
+	    <value>91: N</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter92">
+	    <value>92: A</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter93">
+	    <value>93: c</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter94">
+	    <value>94: D</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter95">
+	    <value>95: d</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter96">
+	    <value>96: I</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter97">
+	    <value>97: O</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter98">
+	    <value>98: j</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter99">
+	    <value>99: e</value>
+	  </text>
+	  <text id="/data/C3_Assessment:letter100">
+	    <value>100: n</value>
+	  </text>
+	  <!--END:C3_LetterSoundKnowledge_v1-->
+	  <!--START:4_Familiar_Word_Reading_v1-->
+          <text id="/data/C4_Instructions:label">
+            <value>Component 4: Familiar Word Reading</value>
+          </text>
+          <text id="/data/C4_Instructions:hint">
+            <value>Show the student the sheet of familiar words. Start the timer when the student reads the first word and mark correctly pronounced words.
+
+After 60 seconds, say "Stop," and record the number of the final word read.</value>
+          </text>
+          <text id="/data/C4_Assessment:label">
+            <value>Select correctly pronounced words.</value>
+          </text>
+          <text id="/data/C4_Assessment:hint">
+            <value>Remember the number of the last word read or attempted.</value>
+          </text>
+          <text id="/data/C4_LastWord:label">
+            <value>Enter the number of the last word read or attempted</value>
+          </text>
+          <text id="/data/C4_LastWord:hint">
+            <value>Enter "0" for early finish if the student failed to correctly read the first 5 words; "50" if the student read all words</value>
+          </text>
+          <text id="/data/C4_Time:label">
+            <value>Enter the time left on the stopwatch in seconds</value>
+          </text>
+          <text id="/data/C4_Time:hint">
+            <value>0 to 60 seconds</value>
+          </text>
+          <text id="/data/C4_Assessment:word01">
+            <value>01: go</value>
+          </text>
+	  <text id="/data/C4_Assessment:word02">
+	    <value>02: sad</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word03">
+	    <value>03: up</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word04">
+	    <value>04: find</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word05">
+	    <value>05: come</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word06">
+	    <value>06: help</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word07">
+	    <value>07: two</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word08">
+	    <value>08: run</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word09">
+	    <value>09: see</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word10">
+	    <value>10: down</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word11">
+	    <value>11: red</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word12">
+	    <value>12: and</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word13">
+	    <value>13: play</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word14">
+	    <value>14: at</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word15">
+	    <value>15: you</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word16">
+	    <value>16: chair</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word17">
+	    <value>17: man</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word18">
+	    <value>18: when</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word19">
+	    <value>19: now</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word20">
+	    <value>20: under</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word21">
+	    <value>21: please</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word22">
+	    <value>22: soon</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word23">
+	    <value>23: like</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word24">
+	    <value>24: they</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word25">
+	    <value>25: good</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word26">
+	    <value>26: thank</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word27">
+	    <value>27: going</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word28">
+	    <value>28: are</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word29">
+	    <value>29: know</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word30">
+	    <value>30: him</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word31">
+	    <value>31: jump</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word32">
+	    <value>32: once</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word33">
+	    <value>33: ask</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word34">
+	    <value>34: fly</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word35">
+	    <value>35: want</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word36">
+	    <value>36: must</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word37">
+	    <value>37: green</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word38">
+	    <value>38: sing</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word39">
+	    <value>39: thos</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word40">
+	    <value>40: always</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word41">
+	    <value>41: many</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word42">
+	    <value>42: which</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word43">
+	    <value>43: upon</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word44">
+	    <value>44: sit</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word45">
+	    <value>45: clean</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word46">
+	    <value>46: stop</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word47">
+	    <value>47: big</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word48">
+	    <value>48: me</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word49">
+	    <value>49: house</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word50">
+	    <value>50: girl</value>
+	  </text>
+	  <!--END:4_Familiar_Word_Reading_v1-->
+	  <!--START:C5_UnfamiliarNonwordReading_v1-->
+          <text id="/data/C5_Instructions:label">
+            <value>Component 5: Unfamiliar Nonword Reading</value>
+          </text>
+          <text id="/data/C5_Instructions:hint">
+            <value>Show the student the sheet of unfamiliar nonwords. Start the timer when the student reads the first word and mark correctly pronounced nonwords.
+
+After 60 seconds, say "Stop," and record the number of the final nonword read.</value>
+          </text>
+          <text id="/data/C5_Assessment:label">
+            <value>Select incorrectly pronounced words.</value>
+          </text>
+          <text id="/data/C5_Assessment:hint">
+            <value>Remember the number of the last word read or attempted.</value>
+          </text>
+          <text id="/data/C5_LastWord:label">
+            <value>Enter the number of the last word read or attempted</value>
+          </text>
+          <text id="/data/C5_LastWord:hint">
+            <value>Enter "0" for early finish if the student failed to correctly read the first 5 words; "50" if the student read all words</value>
+          </text>
+          <text id="/data/C5_Time:label">
+            <value>Enter the time left on the stopwatch in seconds</value>
+          </text>
+          <text id="/data/C5_Time:hint">
+            <value>0 to 60 seconds</value>
+          </text>
+          <text id="/data/C5_Assessment:word01">
+            <value>01: fut</value>
+          </text>
+	  <text id="/data/C5_Assessment:word02">
+	    <value>02: lus</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word03">
+	    <value>03: dit</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word04">
+	    <value>04: leb</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word05">
+	    <value>05: gak</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word06">
+	    <value>06: huz</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word07">
+	    <value>07: jod</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word08">
+	    <value>08: kib</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word09">
+	    <value>09: lek</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word10">
+	    <value>10: tob</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word11">
+	    <value>11: nom</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word12">
+	    <value>12: rop</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word13">
+	    <value>13: hig</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word14">
+	    <value>14: reg</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word15">
+	    <value>15: san</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word16">
+	    <value>16: tup</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word17">
+	    <value>17: ral</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word18">
+	    <value>18: wix</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word19">
+	    <value>19: nep</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word20">
+	    <value>20: nad</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word21">
+	    <value>21: lut</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word22">
+	    <value>22: yod</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word23">
+	    <value>23: sim</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word24">
+	    <value>24: tat</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word25">
+	    <value>25: sig</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word26">
+	    <value>26: en</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word27">
+	    <value>27: mon</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word28">
+	    <value>28: nup</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word29">
+	    <value>29: sen</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word30">
+	    <value>30: kad</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word31">
+	    <value>31: taw</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word32">
+	    <value>32: lew</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word33">
+	    <value>33: paf</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word34">
+	    <value>34: sal</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word35">
+	    <value>35: zuv</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word36">
+	    <value>36: ved</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word37">
+	    <value>37: kag</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word38">
+	    <value>38: vom</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word39">
+	    <value>39: riz</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word40">
+	    <value>40: gof</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word41">
+	    <value>41: maz</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word42">
+	    <value>42: kol</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word43">
+	    <value>43: ver</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word44">
+	    <value>44: et</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word45">
+	    <value>45: beb</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word46">
+	    <value>46: tib</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word47">
+	    <value>47: lef</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word48">
+	    <value>48: yag</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word49">
+	    <value>49: lim</value>
+	  </text>
+	  <text id="/data/C5_Assessment:word50">
+	    <value>50: dov</value>
+	  </text>
+	  <!--END:C5_UnfamiliarNonwordReading_v1-->
+	  <!--START:C6_PassageReadingAndComprehension-->
+          <text id="/data/C6_Instructions:label">
+            <value>Component 6: Passage Reading and Comprehension</value>
+          </text>
+          <text id="/data/C6_Instructions:hint">
+            <value>Ask the child to read aloud the story on the student form. Start the time when the child reads the first word. When 60 seconds are up, remove the passage from in front of the child and ask the follow-up questions.</value>
+          </text>
+          <text id="/data/C6_PassageWords:label">
+            <value>Mark correctly pronounced words in the passage.</value>
+          </text>
+          <text id="/data/C6_PassageWords:hint">
+            <value>Remember the number of the last word the child was reading when 60 seconds are up.</value>
+          </text>
+          <text id="/data/C6_PassageWords:word01">
+            <value>01: My</value>
+          </text>
+	  <text id="/data/C6_PassageWords:word02">
+	    <value>02: name</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word03">
+	    <value>03: is</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word04">
+	    <value>04: Pat.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word05">
+	    <value>05: I</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word06">
+	    <value>06: live</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word07">
+	    <value>07: on</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word08">
+	    <value>08: a</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word09">
+	    <value>09: farm</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word10">
+	    <value>10: with</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word11">
+	    <value>11: my</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word12">
+	    <value>12: mother,</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word13">
+	    <value>13: father</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word14">
+	    <value>14: and</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word15">
+	    <value>15: brother</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word16">
+	    <value>16: Sam.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word17">
+	    <value>17: My</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word18">
+	    <value>18: family</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word19">
+	    <value>19: is</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word20">
+	    <value>20: happy.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word21">
+	    <value>21: One</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word22">
+	    <value>22: day</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word23">
+	    <value>23: Sam</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word24">
+	    <value>24: planted</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word25">
+	    <value>25: seeds</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word26">
+	    <value>26: with</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word27">
+	    <value>27: father.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word28">
+	    <value>28: A</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word29">
+	    <value>29: snake</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word30">
+	    <value>30: bit</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word31">
+	    <value>31: him!</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word32">
+	    <value>32: Mother</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word33">
+	    <value>33: knew</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word34">
+	    <value>34: what</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word35">
+	    <value>35: to</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word36">
+	    <value>36: do.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word37">
+	    <value>37: She</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word38">
+	    <value>38: put</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word39">
+	    <value>39: wet</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word40">
+	    <value>40: cloths</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word41">
+	    <value>41: and</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word42">
+	    <value>42: leaves</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word43">
+	    <value>43: on</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word44">
+	    <value>44: his</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word45">
+	    <value>45: leg.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word46">
+	    <value>46: The</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word47">
+	    <value>47: next</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word48">
+	    <value>48: day,</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word49">
+	    <value>49: Sam</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word50">
+	    <value>50: was</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word51">
+	    <value>51: back</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word52">
+	    <value>52: in</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word53">
+	    <value>53: the</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word54">
+	    <value>54: field</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word55">
+	    <value>55: with</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word56">
+	    <value>56: father.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word57">
+	    <value>57: We</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word58">
+	    <value>58: were</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word59">
+	    <value>59: happy</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word60">
+	    <value>60: again.</value>
+	  </text>
+          <text id="/data/C6_PassageLastWordRead:label">
+            <value>Enter the number of the last word the student read before time was up.</value>
+          </text>
+          <text id="/data/C6_PassageLastWordRead:hint">
+            <value>Enter "0"  to indicate an "early stop" if the student did not read any of the first ten words correctly. Enter 60 if the student finished the entire story.</value>
+          </text>
+          <text id="/data/C6_PassageReadingTime:label">
+            <value>How many seconds were left on the stopwatch when the student finished reading the story?</value>
+          </text>
+          <text id="/data/C6_PassageReadingTime:hint">
+            <value>Enter "0" if the child did not finish.</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestions:correct">
+            <value>Correct</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestions:incorrect">
+            <value>Incorrect</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestions:noResponse">
+            <value>No Response</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestions:notRead">
+            <value>Student did not read this part of the story</value>
+          </text>	  
+          <text id="/data/C6_ComprehensionQuestion1:label">
+            <value>How many people are in Pat's family?</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion1:hint">
+            <value>Answers: four; mother, father, Sam, Pat</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion2:label">
+            <value>Sam's family was happy. Then something happened. What was it?</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion2:hint">
+            <value>Answer: a snake bit Sam</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion3:label">
+            <value>Where did the snake bite Sam? How did Sam get well?</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion3:hint">
+            <value>Answers: leg | his mother helped him; put wet cloths and leaves on his leg</value> 
+          </text>
+          <text id="/data/C6_ComprehensionQuestion4:label">
+            <value>What made the family happy again? What do you think happened to the snake?</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion4:hint">
+            <value>Answers: Sam was healed | ran off; Pat or father killed it; or any reasonable answer</value>
+          </text>
+	  <!--END:C6_PassageReadingAndComprehension-->
+	  <!--START:C7_ListeningComprehension_v1-->
+          <text id="/data/C7_Instructions:label">
+            <value>Component 7: Listening Comprehension</value>
+          </text>
+          <text id="/data/C7_Instructions:hint">
+            <value>Read the story on the next page aloud to the child (only one at a time), slowly (about 1 word per second). Say: "I'm going to read you a short story aloud ONCE and then ask you some questions. Please listen carefully and answer the questions as best you can. Do you understand what you are to do?"</value>
+          </text>
+          <text id="/data/C7_Passage:label">
+            <value>Read this story aloud to the child:</value>
+          </text>
+          <text id="/data/C7_Passage:hint">
+            <value>The gray duckling fell in the mud. "Help me," she cried. A green frog came to help, but he fell in too. "What now?" asked the frog. "I see something that leads to land!" the duckling replied. They both climbed on the log. "We are saved!" they shouted.</value>
+          </text>
+          <text id="/data/C7_Questions:correct">
+            <value>Correct</value>
+          </text>
+          <text id="/data/C7_Questions:incorrect">
+            <value>Incorrect</value>
+          </text>
+          <text id="/data/C7_Questions:noResponse">
+            <value>No Response</value>
+          </text>
+          <text id="/data/C7_Question1:label">
+            <value>What is a duckling?</value>
+          </text>
+          <text id="/data/C7_Question1:hint">
+            <value>Answers: duck; little duck</value>
+          </text>
+          <text id="/data/C7_Question2:label">
+            <value>Who fell in the mud last?</value>
+          </text>
+          <text id="/data/C7_Question2:hint">
+            <value>Answers: frog</value>
+          </text>
+          <text id="/data/C7_Question3:label">
+            <value>What did the duckling see that was important?</value>
+          </text>
+          <text id="/data/C7_Question3:hint">
+            <value>Answers: log</value>
+          </text>
+          <text id="/data/C7_Question4:label">
+            <value>How did the frog and the duck get out of the mud?</value>
+          </text>
+          <text id="/data/C7_Question4:hint">
+            <value>Answers: climbed on log</value>
+          </text>
+          <text id="/data/C7_Question5:label">
+            <value>Why do you think the frog and the duck are friends?</value>
+          </text>
+          <text id="/data/C7_Question5:hint">
+            <value>Answers: duck; little duck</value>
+          </text>
+	  <!--END:C7_ListeningComprehension_v1-->
+	  <!--translation-->
+        </translation>
+      </itext>
+      <!--START:C0_StudentInformation_v1-->
+      <bind nodeset="/data/C0_StudentID" type="int" required="true()"/>
+      <bind nodeset="/data/C0_LastName" type="string"/>
+      <bind nodeset="/data/C0_FirstName" type="string"/>
+      <bind nodeset="/data/C0_Gender" type="select1"/>
+      <bind nodeset="/data/C0_Grade" type="int"/>
+      <!--END:C0_StudentInformation_v1-->
+      <!--START:C1_LetterNameKnowledge_v1-->
+      <bind nodeset="/data/C1_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C1_Assessment" type="select"/>
+      <bind nodeset="/data/C1_LastLetter" type="int" required="true()" constraint="(. &gt;= 0 and . &lt;= 100)"/>
+      <bind nodeset="/data/C1_Time" type="int" constraint="(. &gt;= 0 and . &lt;= 60)" required="true()"/>
+      <!--END:C1_LetterNameKnowledge_v1-->
+      <!--START:C2a_PhonemicAwareness_v1-->
+      <bind nodeset="/data/C2a_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C2a_Word1" type="select"/>
+      <bind nodeset="/data/C2a_Word2" type="select"/>
+      <bind nodeset="/data/C2a_Word3" type="select"/>
+      <bind nodeset="/data/C2a_Word4" type="select"/>
+      <bind nodeset="/data/C2a_Word5" type="select"/>
+      <bind nodeset="/data/C2a_Word6" type="select" relevant="(not(selected(/data/C2a_Word5,'earlyStop')))"/>
+      <bind nodeset="/data/C2a_Word7" type="select" relevant="(not(selected(/data/C2a_Word5,'earlyStop')))"/>
+      <bind nodeset="/data/C2a_Word8" type="select" relevant="(not(selected(/data/C2a_Word5,'earlyStop')))"/>
+      <bind nodeset="/data/C2a_Word9" type="select" relevant="(not(selected(/data/C2a_Word5,'earlyStop')))"/>
+      <bind nodeset="/data/C2a_Word10" type="select" relevant="(not(selected(/data/C2a_Word5,'earlyStop')))"/>
+      <!--END:C2a_PhonemicAwareness_v1-->
+      <!--START:C2b_PhonemicAwarenessISI_v1-->
+      <bind nodeset="/data/C2b_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C2b_Word1" type="select1" required="true()"/>
+      <bind nodeset="/data/C2b_Word2" type="select1" required="true()"/>
+      <bind nodeset="/data/C2b_Word3" type="select1" required="true()"/>
+      <bind nodeset="/data/C2b_Word4" type="select1" required="true()"/>
+      <bind nodeset="/data/C2b_Word5" type="select1" required="true()"/>
+      <bind nodeset="/data/C2b_Word6" type="select1" relevant="(not(selected(/data/C2b_Word5,'earlyStop')) )" required="true()"/>
+      <bind nodeset="/data/C2b_Word7" type="select1" relevant="(not(selected(/data/C2b_Word5,'earlyStop')) )" required="true()"/>
+      <bind nodeset="/data/C2b_Word8" type="select1" relevant="(not(selected(/data/C2b_Word5,'earlyStop')) )" required="true()"/>
+      <bind nodeset="/data/C2b_Word9" type="select1" relevant="(not(selected(/data/C2b_Word5,'earlyStop')) )" required="true()"/>
+      <bind nodeset="/data/C2b_Word10" type="select1" relevant="(not(selected(/data/C2b_Word5,'earlyStop')) )" required="true()"/>
+      <!--END:C2b_PhonemicAwarenessISI_v1-->
+      <!--START:C3_LetterSoundKnowledge_v1-->
+      <bind nodeset="/data/C3_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C3_Assessment" type="select"/>
+      <bind nodeset="/data/C3_LastLetter" type="int" required="true()" constraint="(. &gt;= 0 and . &lt;= 100)"/>
+      <bind nodeset="/data/C3_Time" type="int" constraint="(. &gt;= 0 and . &lt;= 60)" required="true()"/>
+      <!--END:C3_LetterSoundKnowledge_v1-->
+      <!--START:4_Familiar_Word_Reading_v1-->
+      <bind nodeset="/data/C4_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C4_Assessment" type="select"/>
+      <bind nodeset="/data/C4_LastWord" type="int" required="true()" constraint="(. &gt;= 0 and . &lt;= 50)"/>
+      <bind nodeset="/data/C4_Time" type="int" constraint="(. &gt;= 0 and . &lt;= 60)"/>
+      <!--END:4_Familiar_Word_Reading_v1-->
+      <!--START:C5_UnfamiliarNonwordReading_v1-->
+      <bind nodeset="/data/C5_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C5_Assessment" type="select"/>
+      <bind nodeset="/data/C5_LastWord" type="int" required="true()" constraint="(. &gt;= 0 and . &lt;= 50)"/>
+      <bind nodeset="/data/C5_Time" type="int" constraint="(. &gt;= 0 and . &lt;= 60)" required="true()"/>
+      <!--END:C5_UnfamiliarNonwordReading_v1-->
+      <!--START:C6_PassageReadingAndComprehension-->
+      <bind nodeset="/data/C6_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C6_PassageWords" type="select"/>
+      <bind nodeset="/data/C6_PassageLastWordRead" type="int" constraint="(. &gt;= 0 and . &lt;= 60)" required="true()"/>
+      <bind nodeset="/data/C6_PassageReadingTime" type="int" constraint="(. &gt;= 0 and . &lt;= 60)" required="true()"/>
+      <bind nodeset="/data/C6_ComprehensionQuestion1" type="select1" required="true()"/>
+      <bind nodeset="/data/C6_ComprehensionQuestion2" type="select1" required="true()"/>
+      <bind nodeset="/data/C6_ComprehensionQuestion3" type="select1" required="true()"/>
+      <bind nodeset="/data/C6_ComprehensionQuestion4" type="select1" required="true()"/>
+      <!--END:C6_PassageReadingAndComprehension-->
+      <!--START:C7_ListeningComprehension_v1-->
+      <bind nodeset="/data/C7_Instructions" type="string" readonly="true()"/>
+      <bind nodeset="/data/C7_Passage" type="string" readonly="true()"/>
+      <bind nodeset="/data/C7_Question1" type="select1" required="true()"/>
+      <bind nodeset="/data/C7_Question2" type="select1" required="true()"/>
+      <bind nodeset="/data/C7_Question3" type="select1" required="true()"/>
+      <bind nodeset="/data/C7_Question4" type="select1" required="true()"/>
+      <bind nodeset="/data/C7_Question5" type="select1" required="true()"/>
+      <!--END:C7_ListeningComprehension_v1-->
+      <!--bind-->
+    </model>
+  </h:head>
+  <h:body>
+    <!--START:C0_StudentInformation_v1-->
+    <group>
+    <label>Student Information</label>
+       <input ref="/data/C0_StudentID">
+         <label ref="jr:itext('/data/C0_StudentID:label')"/>
+         <hint ref="jr:itext('/data/C0_StudentID:hint')"/>
+       </input>
+       <input ref="/data/C0_LastName">
+         <label ref="jr:itext('/data/C0_LastName:label')"/>
+         <hint ref="jr:itext('/data/C0_LastName:hint')"/>
+       </input>
+       <input ref="/data/C0_FirstName">
+         <label ref="jr:itext('/data/C0_FirstName:label')"/>
+         <hint ref="jr:itext('/data/C0_FirstName:hint')"/>
+       </input>
+       <select1 ref="/data/C0_Gender">
+         <label ref="jr:itext('/data/C0_Gender:label')"/>
+         <hint ref="jr:itext('/data/C0_Gender:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C0_Gender:option0')"/>
+           <value>male</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C0_Gender:option1')"/>
+           <value>female</value>
+         </item>
+       </select1>
+       <input ref="/data/C0_Grade">
+         <label ref="jr:itext('/data/C0_Grade:label')"/>
+         <hint ref="jr:itext('/data/C0_Grade:hint')"/>
+       </input>
+    </group>
+    <!--END:C0_StudentInformation_v1-->
+    <!--START:C1_LetterNameKnowledge_v1-->
+    <group>
+    <label>Component 1: Letter Name Knowledge</label>
+       <input ref="/data/C1_Instructions">
+         <label ref="jr:itext('/data/C1_Instructions:label')"/>
+         <hint ref="jr:itext('/data/C1_Instructions:hint')"/>
+       </input>
+       <select ref="/data/C1_Assessment">
+         <label ref="jr:itext('/data/C1_Assessment:label')"/>
+         <hint ref="jr:itext('/data/C1_Assessment:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C1_Assessment:letter01')"/>
+           <value>01</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter02')"/>
+   	<value>02</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter03')"/>
+   	<value>03</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter04')"/>
+   	<value>04</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter05')"/>
+   	<value>05</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter06')"/>
+   	<value>06</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter07')"/>
+   	<value>07</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter08')"/>
+   	<value>08</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter09')"/>
+   	<value>09</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter10')"/>
+   	<value>10</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter11')"/>
+   	<value>11</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter12')"/>
+   	<value>12</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter13')"/>
+   	<value>13</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter14')"/>
+   	<value>14</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter15')"/>
+   	<value>15</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter16')"/>
+   	<value>16</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter17')"/>
+   	<value>17</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter18')"/>
+   	<value>18</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter19')"/>
+   	<value>19</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter20')"/>
+   	<value>20</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter21')"/>
+   	<value>21</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter22')"/>
+   	<value>22</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter23')"/>
+   	<value>23</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter24')"/>
+   	<value>24</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter25')"/>
+   	<value>25</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter26')"/>
+   	<value>26</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter27')"/>
+   	<value>27</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter28')"/>
+   	<value>28</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter29')"/>
+   	<value>29</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter30')"/>
+   	<value>30</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter31')"/>
+   	<value>31</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter32')"/>
+   	<value>32</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter33')"/>
+   	<value>33</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter34')"/>
+   	<value>34</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter35')"/>
+   	<value>35</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter36')"/>
+   	<value>36</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter37')"/>
+   	<value>37</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter38')"/>
+   	<value>38</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter39')"/>
+   	<value>39</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter40')"/>
+   	<value>40</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter41')"/>
+   	<value>41</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter42')"/>
+   	<value>42</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter43')"/>
+   	<value>43</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter44')"/>
+   	<value>44</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter45')"/>
+   	<value>45</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter46')"/>
+   	<value>46</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter47')"/>
+   	<value>47</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter48')"/>
+   	<value>48</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter49')"/>
+   	<value>49</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter50')"/>
+   	<value>50</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter51')"/>
+   	<value>51</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter52')"/>
+   	<value>52</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter53')"/>
+   	<value>53</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter54')"/>
+   	<value>54</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter55')"/>
+   	<value>55</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter56')"/>
+   	<value>56</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter57')"/>
+   	<value>57</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter58')"/>
+   	<value>58</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter59')"/>
+   	<value>59</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter60')"/>
+   	<value>60</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter61')"/>
+   	<value>61</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter62')"/>
+   	<value>62</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter63')"/>
+   	<value>63</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter64')"/>
+   	<value>64</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter65')"/>
+   	<value>65</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter66')"/>
+   	<value>66</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter67')"/>
+   	<value>67</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter68')"/>
+   	<value>68</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter69')"/>
+   	<value>69</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter70')"/>
+   	<value>70</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter71')"/>
+   	<value>71</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter72')"/>
+   	<value>72</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter73')"/>
+   	<value>73</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter74')"/>
+   	<value>74</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter75')"/>
+   	<value>75</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter76')"/>
+   	<value>76</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter77')"/>
+   	<value>77</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter78')"/>
+   	<value>78</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter79')"/>
+   	<value>79</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter80')"/>
+   	<value>80</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter81')"/>
+   	<value>81</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter82')"/>
+   	<value>82</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter83')"/>
+   	<value>83</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter84')"/>
+   	<value>84</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter85')"/>
+   	<value>85</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter86')"/>
+   	<value>86</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter87')"/>
+   	<value>87</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter88')"/>
+   	<value>88</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter89')"/>
+   	<value>89</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter90')"/>
+   	<value>90</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter91')"/>
+   	<value>91</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter92')"/>
+   	<value>92</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter93')"/>
+   	<value>93</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter94')"/>
+   	<value>94</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter95')"/>
+   	<value>95</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter96')"/>
+   	<value>96</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter97')"/>
+   	<value>97</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter98')"/>
+   	<value>98</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter99')"/>
+   	<value>99</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C1_Assessment:letter100')"/>
+   	<value>100</value>
+         </item>
+       </select>
+       <input ref="/data/C1_LastLetter">
+         <label ref="jr:itext('/data/C1_LastLetter:label')"/>
+         <hint ref="jr:itext('/data/C1_LastLetter:hint')"/>
+       </input>
+       <input ref="/data/C1_Time">
+         <label ref="jr:itext('/data/C1_Time:label')"/>
+         <hint ref="jr:itext('/data/C1_Time:hint')"/>
+       </input>
+    </group>
+    <!--END:C1_LetterNameKnowledge_v1-->
+    <!--START:C2a_PhonemicAwareness_v1-->
+    <group>
+    <label>Component 2a: Phonemic Awareness</label>
+       <input ref="/data/C2a_Instructions">
+         <label ref="jr:itext('/data/C2a_Instructions:label')"/>
+         <hint ref="jr:itext('/data/C2a_Instructions:hint')"/>
+       </input>
+       <select ref="/data/C2a_Word1">
+         <label ref="jr:itext('/data/C2a_Word1:label')"/>
+         <hint ref="jr:itext('/data/C2a_Word1:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word1:sound0')"/>
+           <value>sound1</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word1:sound1')"/>
+           <value>sound2</value>
+         </item>
+       </select>
+       <select ref="/data/C2a_Word2">
+         <label ref="jr:itext('/data/C2a_Word2:label')"/>
+         <hint ref="jr:itext('/data/C2a_Word2:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word2:sound0')"/>
+           <value>sound1</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word2:sound1')"/>
+           <value>sound2</value>
+         </item>
+       </select>
+       <select ref="/data/C2a_Word3">
+         <label ref="jr:itext('/data/C2a_Word3:label')"/>
+         <hint ref="jr:itext('/data/C2a_Word3:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word3:sound0')"/>
+           <value>sound1</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word3:sound1')"/>
+           <value>sound2</value>
+         </item>
+       </select>
+       <select ref="/data/C2a_Word4">
+         <label ref="jr:itext('/data/C2a_Word4:label')"/>
+         <hint ref="jr:itext('/data/C2a_Word4:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word4:sound0')"/>
+           <value>sound1</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word4:sound1')"/>
+           <value>sound2</value>
+         </item>
+       </select>
+       <select ref="/data/C2a_Word5">
+         <label ref="jr:itext('/data/C2a_Word5:label')"/>
+         <hint ref="jr:itext('/data/C2a_Word5:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word5:sound0')"/>
+           <value>sound1</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word5:sound1')"/>
+           <value>sound2</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word5:sound2')"/>
+           <value>earlyStop</value>
+         </item>
+       </select>
+       <select ref="/data/C2a_Word6">
+         <label ref="jr:itext('/data/C2a_Word6:label')"/>
+         <hint ref="jr:itext('/data/C2a_Word6:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word6:sound0')"/>
+           <value>sound1</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word6:sound1')"/>
+           <value>sound2</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word6:sound2')"/>
+           <value>sound3</value>
+         </item>
+       </select>
+       <select ref="/data/C2a_Word7">
+         <label ref="jr:itext('/data/C2a_Word7:label')"/>
+         <hint ref="jr:itext('/data/C2a_Word7:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word7:sound0')"/>
+           <value>sound1</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word7:sound1')"/>
+           <value>sound2</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word7:sound2')"/>
+           <value>sound3</value>
+         </item>
+       </select>
+       <select ref="/data/C2a_Word8">
+         <label ref="jr:itext('/data/C2a_Word8:label')"/>
+         <hint ref="jr:itext('/data/C2a_Word8:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word8:sound0')"/>
+           <value>sound1</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word8:sound1')"/>
+           <value>sound2</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word8:sound2')"/>
+           <value>sound3</value>
+         </item>
+       </select>
+       <select ref="/data/C2a_Word9">
+         <label ref="jr:itext('/data/C2a_Word9:label')"/>
+         <hint ref="jr:itext('/data/C2a_Word9:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word9:sound0')"/>
+           <value>sound1</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word9:sound1')"/>
+           <value>sound2</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word9:sound2')"/>
+           <value>sound3</value>
+         </item>
+       </select>
+       <select ref="/data/C2a_Word10">
+         <label ref="jr:itext('/data/C2a_Word10:label')"/>
+         <hint ref="jr:itext('/data/C2a_Word10:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word10:sound0')"/>
+           <value>sound1</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word10:sound1')"/>
+           <value>sound2</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2a_Word10:sound2')"/>
+           <value>sound3</value>
+         </item>
+       </select>
+    </group>
+    <!--END:C2a_PhonemicAwareness_v1-->
+    <!--START:C2b_PhonemicAwarenessISI_v1-->
+    <group>
+    <label>Component 2b: Phonemic Awareness (ISI)</label>
+       <input ref="/data/C2b_Instructions">
+         <label ref="jr:itext('/data/C2b_Instructions:label')"/>
+         <hint ref="jr:itext('/data/C2b_Instructions:hint')"/>
+       </input>
+       <select1 ref="/data/C2b_Word1">
+         <label ref="jr:itext('/data/C2b_Word1:label')"/>
+         <hint ref="jr:itext('/data/C2b_Word1:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C2b_Word2">
+         <label ref="jr:itext('/data/C2b_Word2:label')"/>
+         <hint ref="jr:itext('/data/C2b_Word2:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C2b_Word3">
+         <label ref="jr:itext('/data/C2b_Word3:label')"/>
+         <hint ref="jr:itext('/data/C2b_Word3:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C2b_Word4">
+         <label ref="jr:itext('/data/C2b_Word4:label')"/>
+         <hint ref="jr:itext('/data/C2b_Word4:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C2b_Word5">
+         <label ref="jr:itext('/data/C2b_Word5:label')"/>
+         <hint ref="jr:itext('/data/C2b_Word5:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:earlyStop')"/>
+           <value>earlyStop</value>
+         </item>      
+       </select1>
+       <select1 ref="/data/C2b_Word6">
+         <label ref="jr:itext('/data/C2b_Word6:label')"/>
+         <hint ref="jr:itext('/data/C2b_Word6:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+           <value>incorrect</value>
+   
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C2b_Word7">
+         <label ref="jr:itext('/data/C2b_Word7:label')"/>
+         <hint ref="jr:itext('/data/C2b_Word7:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C2b_Word8">
+         <label ref="jr:itext('/data/C2b_Word8:label')"/>
+         <hint ref="jr:itext('/data/C2b_Word8:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C2b_Word9">
+         <label ref="jr:itext('/data/C2b_Word9:label')"/>
+         <hint ref="jr:itext('/data/C2b_Word9:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C2b_Word10">
+         <label ref="jr:itext('/data/C2b_Word10:label')"/>
+         <hint ref="jr:itext('/data/C2b_Word10:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C2b_Words:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+    </group>
+    <!--END:C2b_PhonemicAwarenessISI_v1-->
+    <!--START:C3_LetterSoundKnowledge_v1-->
+    <group>
+    <label>Component 3: Letter Sound Knowledge</label>
+       <input ref="/data/C3_Instructions">
+         <label ref="jr:itext('/data/C3_Instructions:label')"/>
+         <hint ref="jr:itext('/data/C3_Instructions:hint')"/>
+       </input>
+       <select ref="/data/C3_Assessment">
+         <label ref="jr:itext('/data/C3_Assessment:label')"/>
+         <hint ref="jr:itext('/data/C3_Assessment:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C3_Assessment:letter01')"/>
+           <value>01</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter02')"/>
+   	<value>02</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter03')"/>
+   	<value>03</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter04')"/>
+   	<value>04</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter05')"/>
+   	<value>05</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter06')"/>
+   	<value>06</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter07')"/>
+   	<value>07</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter08')"/>
+   	<value>08</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter09')"/>
+   	<value>09</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter10')"/>
+   	<value>10</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter11')"/>
+   	<value>11</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter12')"/>
+   	<value>12</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter13')"/>
+   	<value>13</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter14')"/>
+   	<value>14</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter15')"/>
+   	<value>15</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter16')"/>
+   	<value>16</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter17')"/>
+   	<value>17</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter18')"/>
+   	<value>18</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter19')"/>
+   	<value>19</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter20')"/>
+   	<value>20</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter21')"/>
+   	<value>21</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter22')"/>
+   	<value>22</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter23')"/>
+   	<value>23</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter24')"/>
+   	<value>24</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter25')"/>
+   	<value>25</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter26')"/>
+   	<value>26</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter27')"/>
+   	<value>27</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter28')"/>
+   	<value>28</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter29')"/>
+   	<value>29</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter30')"/>
+   	<value>30</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter31')"/>
+   	<value>31</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter32')"/>
+   	<value>32</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter33')"/>
+   	<value>33</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter34')"/>
+   	<value>34</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter35')"/>
+   	<value>35</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter36')"/>
+   	<value>36</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter37')"/>
+   	<value>37</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter38')"/>
+   	<value>38</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter39')"/>
+   	<value>39</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter40')"/>
+   	<value>40</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter41')"/>
+   	<value>41</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter42')"/>
+   	<value>42</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter43')"/>
+   	<value>43</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter44')"/>
+   	<value>44</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter45')"/>
+   	<value>45</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter46')"/>
+   	<value>46</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter47')"/>
+   	<value>47</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter48')"/>
+   	<value>48</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter49')"/>
+   	<value>49</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter50')"/>
+   	<value>50</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter51')"/>
+   	<value>51</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter52')"/>
+   	<value>52</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter53')"/>
+   	<value>53</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter54')"/>
+   	<value>54</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter55')"/>
+   	<value>55</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter56')"/>
+   	<value>56</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter57')"/>
+   	<value>57</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter58')"/>
+   	<value>58</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter59')"/>
+   	<value>59</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter60')"/>
+   	<value>60</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter61')"/>
+   	<value>61</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter62')"/>
+   	<value>62</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter63')"/>
+   	<value>63</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter64')"/>
+   	<value>64</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter65')"/>
+   	<value>65</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter66')"/>
+   	<value>66</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter67')"/>
+   	<value>67</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter68')"/>
+   	<value>68</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter69')"/>
+   	<value>69</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter70')"/>
+   	<value>70</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter71')"/>
+   	<value>71</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter72')"/>
+   	<value>72</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter73')"/>
+   	<value>73</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter74')"/>
+   	<value>74</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter75')"/>
+   	<value>75</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter76')"/>
+   	<value>76</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter77')"/>
+   	<value>77</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter78')"/>
+   	<value>78</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter79')"/>
+   	<value>79</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter80')"/>
+   	<value>80</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter81')"/>
+   	<value>81</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter82')"/>
+   	<value>82</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter83')"/>
+   	<value>83</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter84')"/>
+   	<value>84</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter85')"/>
+   	<value>85</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter86')"/>
+   	<value>86</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter87')"/>
+   	<value>87</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter88')"/>
+   	<value>88</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter89')"/>
+   	<value>89</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter90')"/>
+   	<value>90</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter91')"/>
+   	<value>91</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter92')"/>
+   	<value>92</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter93')"/>
+   	<value>93</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter94')"/>
+   	<value>94</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter95')"/>
+   	<value>95</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter96')"/>
+   	<value>96</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter97')"/>
+   	<value>97</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter98')"/>
+   	<value>98</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter99')"/>
+   	<value>99</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C3_Assessment:letter100')"/>
+   	<value>100</value>
+         </item>
+       </select>
+       <input ref="/data/C3_LastLetter">
+         <label ref="jr:itext('/data/C3_LastLetter:label')"/>
+         <hint ref="jr:itext('/data/C3_LastLetter:hint')"/>
+       </input>
+       <input ref="/data/C3_Time">
+         <label ref="jr:itext('/data/C3_Time:label')"/>
+         <hint ref="jr:itext('/data/C3_Time:hint')"/>
+       </input>
+    </group>
+    <!--END:C3_LetterSoundKnowledge_v1-->
+    <!--START:4_Familiar_Word_Reading_v1-->
+    <group>
+    <label>Component 4: Familiar Word Reading</label>
+       <input ref="/data/C4_Instructions">
+         <label ref="jr:itext('/data/C4_Instructions:label')"/>
+         <hint ref="jr:itext('/data/C4_Instructions:hint')"/>
+       </input>
+       <select ref="/data/C4_Assessment">
+         <label ref="jr:itext('/data/C4_Assessment:label')"/>
+         <hint ref="jr:itext('/data/C4_Assessment:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C4_Assessment:word01')"/>
+           <value>01</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word02')"/>
+   	<value>02</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word03')"/>
+   	<value>03</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word04')"/>
+   	<value>04</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word05')"/>
+   	<value>05</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word06')"/>
+   	<value>06</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word07')"/>
+   	<value>07</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word08')"/>
+   	<value>08</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word09')"/>
+   	<value>09</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word10')"/>
+   	<value>10</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word11')"/>
+   	<value>11</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word12')"/>
+   	<value>12</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word13')"/>
+   	<value>13</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word14')"/>
+   	<value>14</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word15')"/>
+   	<value>15</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word16')"/>
+   	<value>16</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word17')"/>
+   	<value>17</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word18')"/>
+   	<value>18</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word19')"/>
+   	<value>19</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word20')"/>
+   	<value>20</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word21')"/>
+   	<value>21</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word22')"/>
+   	<value>22</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word23')"/>
+   	<value>23</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word24')"/>
+   	<value>24</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word25')"/>
+   	<value>25</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word26')"/>
+   	<value>26</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word27')"/>
+   	<value>27</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word28')"/>
+   	<value>28</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word29')"/>
+   	<value>29</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word30')"/>
+   	<value>30</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word31')"/>
+   	<value>31</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word32')"/>
+   	<value>32</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word33')"/>
+   	<value>33</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word34')"/>
+   	<value>34</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word35')"/>
+   	<value>35</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word36')"/>
+   	<value>36</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word37')"/>
+   	<value>37</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word38')"/>
+   	<value>38</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word39')"/>
+   	<value>39</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word40')"/>
+   	<value>40</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word41')"/>
+   	<value>41</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word42')"/>
+   	<value>42</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word43')"/>
+   	<value>43</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word44')"/>
+   	<value>44</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word45')"/>
+   	<value>45</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word46')"/>
+   	<value>46</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word47')"/>
+   	<value>47</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word48')"/>
+   	<value>48</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word49')"/>
+   	<value>49</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C4_Assessment:word50')"/>
+   	<value>50</value>
+         </item>
+       </select>
+       <input ref="/data/C4_LastWord">
+         <label ref="jr:itext('/data/C4_LastWord:label')"/>
+         <hint ref="jr:itext('/data/C4_LastWord:hint')"/>
+       </input>
+       <input ref="/data/C4_Time">
+         <label ref="jr:itext('/data/C4_Time:label')"/>
+         <hint ref="jr:itext('/data/C4_Time:hint')"/>
+       </input>
+    </group>
+    <!--END:4_Familiar_Word_Reading_v1-->
+    <!--START:C5_UnfamiliarNonwordReading_v1-->
+    <group>
+    <label>Component 5: Unfamiliar Nonword Reading</label>
+       <input ref="/data/C5_Instructions">
+         <label ref="jr:itext('/data/C5_Instructions:label')"/>
+         <hint ref="jr:itext('/data/C5_Instructions:hint')"/>
+       </input>
+       <select ref="/data/C5_Assessment">
+         <label ref="jr:itext('/data/C5_Assessment:label')"/>
+         <hint ref="jr:itext('/data/C5_Assessment:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C5_Assessment:word01')"/>
+           <value>01</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word02')"/>
+   	<value>02</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word03')"/>
+   	<value>03</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word04')"/>
+   	<value>04</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word05')"/>
+   	<value>05</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word06')"/>
+   	<value>06</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word07')"/>
+   	<value>07</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word08')"/>
+   	<value>08</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word09')"/>
+   	<value>09</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word10')"/>
+   	<value>10</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word11')"/>
+   	<value>11</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word12')"/>
+   	<value>12</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word13')"/>
+   	<value>13</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word14')"/>
+   	<value>14</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word15')"/>
+   	<value>15</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word16')"/>
+   	<value>16</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word17')"/>
+   	<value>17</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word18')"/>
+   	<value>18</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word19')"/>
+   	<value>19</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word20')"/>
+   	<value>20</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word21')"/>
+   	<value>21</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word22')"/>
+   	<value>22</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word23')"/>
+   	<value>23</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word24')"/>
+   	<value>24</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word25')"/>
+   	<value>25</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word26')"/>
+   	<value>26</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word27')"/>
+   	<value>27</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word28')"/>
+   	<value>28</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word29')"/>
+   	<value>29</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word30')"/>
+   	<value>30</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word31')"/>
+   	<value>31</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word32')"/>
+   	<value>32</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word33')"/>
+   	<value>33</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word34')"/>
+   	<value>34</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word35')"/>
+   	<value>35</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word36')"/>
+   	<value>36</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word37')"/>
+   	<value>37</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word38')"/>
+   	<value>38</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word39')"/>
+   	<value>39</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word40')"/>
+   	<value>40</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word41')"/>
+   	<value>41</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word42')"/>
+   	<value>42</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word43')"/>
+   	<value>43</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word44')"/>
+   	<value>44</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word45')"/>
+   	<value>45</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word46')"/>
+   	<value>46</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word47')"/>
+   	<value>47</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word48')"/>
+   	<value>48</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word49')"/>
+   	<value>49</value>
+         </item>
+         <item>
+   	<label ref="jr:itext('/data/C5_Assessment:word50')"/>
+   	<value>50</value>
+         </item>
+       </select>
+       <input ref="/data/C5_LastWord">
+         <label ref="jr:itext('/data/C5_LastWord:label')"/>
+         <hint ref="jr:itext('/data/C5_LastWord:hint')"/>
+       </input>
+       <input ref="/data/C5_Time">
+         <label ref="jr:itext('/data/C5_Time:label')"/>
+         <hint ref="jr:itext('/data/C5_Time:hint')"/>
+       </input>
+    </group>
+    <!--END:C5_UnfamiliarNonwordReading_v1-->
+    <!--START:C6_PassageReadingAndComprehension-->
+    <group>
+    <label>Component 6: Passage Reading and Comprehension</label>
+       <input ref="/data/C6_Instructions">
+         <label ref="jr:itext('/data/C6_Instructions:label')"/>
+         <hint ref="jr:itext('/data/C6_Instructions:hint')"/>
+       </input>
+       <select ref="/data/C6_PassageWords">
+         <label ref="jr:itext('/data/C6_PassageWords:label')"/>
+         <hint ref="jr:itext('/data/C6_PassageWords:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word01')"/>
+           <value>word01</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word02')"/>
+           <value>word02</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word03')"/>
+           <value>word03</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word04')"/>
+           <value>word04</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word05')"/>
+           <value>word05</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word06')"/>
+           <value>word06</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word07')"/>
+           <value>word07</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word08')"/>
+           <value>word08</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word09')"/>
+           <value>word09</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word10')"/>
+           <value>word10</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word11')"/>
+           <value>word11</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word12')"/>
+           <value>word12</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word13')"/>
+           <value>word13</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word14')"/>
+           <value>word14</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word15')"/>
+           <value>word15</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word16')"/>
+           <value>word16</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word17')"/>
+           <value>word17</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word18')"/>
+           <value>word18</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word19')"/>
+           <value>word19</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word20')"/>
+           <value>word20</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word21')"/>
+           <value>word21</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word22')"/>
+           <value>word22</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word23')"/>
+           <value>word23</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word24')"/>
+           <value>word24</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word25')"/>
+           <value>word25</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word26')"/>
+           <value>word26</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word27')"/>
+           <value>word27</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word28')"/>
+           <value>word28</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word29')"/>
+           <value>word29</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word30')"/>
+           <value>word30</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word31')"/>
+           <value>word31</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word32')"/>
+           <value>word32</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word33')"/>
+           <value>word33</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word34')"/>
+           <value>word34</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word35')"/>
+           <value>word35</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word36')"/>
+           <value>word36</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word37')"/>
+           <value>word37</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word38')"/>
+           <value>word38</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word39')"/>
+           <value>word39</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word40')"/>
+           <value>word40</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word41')"/>
+           <value>word41</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word42')"/>
+           <value>word42</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word43')"/>
+           <value>word43</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word44')"/>
+           <value>word44</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word45')"/>
+           <value>word45</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word46')"/>
+           <value>word46</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word47')"/>
+           <value>word47</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word48')"/>
+           <value>word48</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word49')"/>
+           <value>word49</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word50')"/>
+           <value>word50</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word51')"/>
+           <value>word51</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word52')"/>
+           <value>word52</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word53')"/>
+           <value>word53</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word54')"/>
+           <value>word54</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word55')"/>
+           <value>word55</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word56')"/>
+           <value>word56</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word57')"/>
+           <value>word57</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word58')"/>
+           <value>word58</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word59')"/>
+           <value>word59</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_PassageWords:word60')"/>
+           <value>word60</value>
+         </item>
+       </select>
+       <input ref="/data/C6_PassageLastWordRead">
+         <label ref="jr:itext('/data/C6_PassageLastWordRead:label')"/>
+         <hint ref="jr:itext('/data/C6_PassageLastWordRead:hint')"/>
+       </input>
+       <input ref="/data/C6_PassageReadingTime">
+         <label ref="jr:itext('/data/C6_PassageReadingTime:label')"/>
+         <hint ref="jr:itext('/data/C6_PassageReadingTime:hint')"/>
+       </input>
+       <select1 ref="/data/C6_ComprehensionQuestion1">
+         <label ref="jr:itext('/data/C6_ComprehensionQuestion1:label')"/>
+         <hint ref="jr:itext('/data/C6_ComprehensionQuestion1:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:notRead')"/>
+           <value>notRead</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C6_ComprehensionQuestion2">
+         <label ref="jr:itext('/data/C6_ComprehensionQuestion2:label')"/>
+         <hint ref="jr:itext('/data/C6_ComprehensionQuestion2:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:notRead')"/>
+           <value>notRead</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C6_ComprehensionQuestion3">
+         <label ref="jr:itext('/data/C6_ComprehensionQuestion3:label')"/>
+         <hint ref="jr:itext('/data/C6_ComprehensionQuestion3:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:notRead')"/>
+           <value>notRead</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C6_ComprehensionQuestion4">
+         <label ref="jr:itext('/data/C6_ComprehensionQuestion4:label')"/>
+         <hint ref="jr:itext('/data/C6_ComprehensionQuestion4:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C6_ComprehensionQuestions:notRead')"/>
+           <value>notRead</value>
+         </item>
+       </select1>
+    </group>
+    <!--END:C6_PassageReadingAndComprehension-->
+    <!--START:C7_ListeningComprehension_v1-->
+    <group>
+    <label>Component 7: Listening Comprehension</label>
+       <input ref="/data/C7_Instructions">
+         <label ref="jr:itext('/data/C7_Instructions:label')"/>
+         <hint ref="jr:itext('/data/C7_Instructions:hint')"/>
+       </input>
+       <input ref="/data/C7_Passage">
+         <label ref="jr:itext('/data/C7_Passage:label')"/>
+         <hint ref="jr:itext('/data/C7_Passage:hint')"/>
+       </input>
+       <select1 ref="/data/C7_Question1">
+         <label ref="jr:itext('/data/C7_Question1:label')"/>
+         <hint ref="jr:itext('/data/C7_Question1:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C7_Question2">
+         <label ref="jr:itext('/data/C7_Question2:label')"/>
+         <hint ref="jr:itext('/data/C7_Question2:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C7_Question3">
+         <label ref="jr:itext('/data/C7_Question3:label')"/>
+         <hint ref="jr:itext('/data/C7_Question3:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C7_Question4">
+         <label ref="jr:itext('/data/C7_Question4:label')"/>
+         <hint ref="jr:itext('/data/C7_Question4:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+       <select1 ref="/data/C7_Question5">
+         <label ref="jr:itext('/data/C7_Question5:label')"/>
+         <hint ref="jr:itext('/data/C7_Question5:hint')"/>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:correct')"/>
+           <value>correct</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:incorrect')"/>
+           <value>incorrect</value>
+         </item>
+         <item>
+           <label ref="jr:itext('/data/C7_Questions:noResponse')"/>
+           <value>noResponse</value>
+         </item>
+       </select1>
+    </group>
+    <!--END:C7_ListeningComprehension_v1-->
+    <!--body-->
+  </h:body>
+</h:html>

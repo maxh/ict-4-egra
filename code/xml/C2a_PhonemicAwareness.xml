@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Component 2a: Phonemic Awareness</h:title>
+    <model>
+      <instance>
+        <data id="C2a_PhonemicAwareness_v1">
+          <C2a_Instructions/>
+          <C2a_Word1/>
+          <C2a_Word2/>
+          <C2a_Word3/>
+          <C2a_Word4/>
+          <C2a_Word5/>
+          <C2a_Word6/>
+          <C2a_Word7/>
+          <C2a_Word8/>
+          <C2a_Word9/>
+          <C2a_Word10/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/C2a_Instructions:label">
+            <value>Component 2a: Phonemic Awareness</value>
+          </text>
+          <text id="/data/C2a_Instructions:hint">
+            <value> At each step, please ask the student "What are the sounds in _______?" Say each word twice. Mark correctly identified sounds. Leave incorrectly identified or skipped sounds unchecked.</value>
+          </text>
+          <text id="/data/C2a_Word1:label">
+            <value>Word 1: "too"</value>
+          </text>
+          <text id="/data/C2a_Word1:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word1:sound0">
+            <value>/t/</value>
+          </text>
+          <text id="/data/C2a_Word1:sound1">
+            <value>/oo/</value>
+          </text>
+          <text id="/data/C2a_Word2:label">
+            <value>Word 2: "say"</value>
+          </text>
+          <text id="/data/C2a_Word2:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word2:sound0">
+            <value>/s/</value>
+          </text>
+          <text id="/data/C2a_Word2:sound1">
+            <value>/a/</value>
+          </text>
+          <text id="/data/C2a_Word3:label">
+            <value>Word 3: "up"</value>
+          </text>
+          <text id="/data/C2a_Word3:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word3:sound0">
+            <value>/u/</value>
+          </text>
+          <text id="/data/C2a_Word3:sound1">
+            <value>/p/</value>
+          </text>
+          <text id="/data/C2a_Word4:label">
+            <value>Word 4: "buy"</value>
+          </text>
+          <text id="/data/C2a_Word4:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word4:sound0">
+            <value>/b/</value>
+          </text>
+          <text id="/data/C2a_Word4:sound1">
+            <value>/i/</value>
+          </text>
+          <text id="/data/C2a_Word5:label">
+            <value>Word 5: "me"</value>
+          </text>
+          <text id="/data/C2a_Word5:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word5:sound0">
+            <value>/m/</value>
+          </text>
+          <text id="/data/C2a_Word5:sound1">
+            <value>/e/</value>
+          </text>
+          <text id="/data/C2a_Word5:sound2">
+            <value>Check here if the student had no correct response on the first five words (ends exercise).</value>
+          </text>
+          <text id="/data/C2a_Word6:label">
+            <value>Word 6: "set"</value>
+          </text>
+          <text id="/data/C2a_Word6:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word6:sound0">
+            <value>/s/</value>
+          </text>
+          <text id="/data/C2a_Word6:sound1">
+            <value>/e/</value>
+          </text>
+          <text id="/data/C2a_Word6:sound2">
+            <value>/t/</value>
+          </text>
+          <text id="/data/C2a_Word7:label">
+            <value>Word 7: "mop"</value>
+          </text>
+          <text id="/data/C2a_Word7:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word7:sound0">
+            <value>/m/</value>
+          </text>
+          <text id="/data/C2a_Word7:sound1">
+            <value>/o/</value>
+          </text>
+          <text id="/data/C2a_Word7:sound2">
+            <value>/p/</value>
+          </text>
+          <text id="/data/C2a_Word8:label">
+            <value>Word 8: "jam"</value>
+          </text>
+          <text id="/data/C2a_Word8:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word8:sound0">
+            <value>/j/</value>
+          </text>
+          <text id="/data/C2a_Word8:sound1">
+            <value>/a/</value>
+          </text>
+          <text id="/data/C2a_Word8:sound2">
+            <value>/m/</value>
+          </text>
+          <text id="/data/C2a_Word9:label">
+            <value>Word 9: "fish"</value>
+          </text>
+          <text id="/data/C2a_Word9:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word9:sound0">
+            <value>/f/</value>
+          </text>
+          <text id="/data/C2a_Word9:sound1">
+            <value>/i/</value>
+          </text>
+          <text id="/data/C2a_Word9:sound2">
+            <value>/sh/</value>
+          </text>
+          <text id="/data/C2a_Word10:label">
+            <value>Word 10: "cool"</value>
+          </text>
+          <text id="/data/C2a_Word10:hint">
+            <value></value>
+          </text>
+          <text id="/data/C2a_Word10:sound0">
+            <value>/k/</value>
+          </text>
+          <text id="/data/C2a_Word10:sound1">
+            <value>/oo/</value>
+          </text>
+          <text id="/data/C2a_Word10:sound2">
+            <value>/l/</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/C2a_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C2a_Word1" type="select"/>
+      <bind nodeset="/data/C2a_Word2" type="select"/>
+      <bind nodeset="/data/C2a_Word3" type="select"/>
+      <bind nodeset="/data/C2a_Word4" type="select"/>
+      <bind nodeset="/data/C2a_Word5" type="select"/>
+      <bind nodeset="/data/C2a_Word6" type="select" relevant="(not(selected(/data/C2a_Word5,'earlyStop')))"/>
+      <bind nodeset="/data/C2a_Word7" type="select" relevant="(not(selected(/data/C2a_Word5,'earlyStop')))"/>
+      <bind nodeset="/data/C2a_Word8" type="select" relevant="(not(selected(/data/C2a_Word5,'earlyStop')))"/>
+      <bind nodeset="/data/C2a_Word9" type="select" relevant="(not(selected(/data/C2a_Word5,'earlyStop')))"/>
+      <bind nodeset="/data/C2a_Word10" type="select" relevant="(not(selected(/data/C2a_Word5,'earlyStop')))"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/C2a_Instructions">
+      <label ref="jr:itext('/data/C2a_Instructions:label')"/>
+      <hint ref="jr:itext('/data/C2a_Instructions:hint')"/>
+    </input>
+    <select ref="/data/C2a_Word1">
+      <label ref="jr:itext('/data/C2a_Word1:label')"/>
+      <hint ref="jr:itext('/data/C2a_Word1:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word1:sound0')"/>
+        <value>sound1</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word1:sound1')"/>
+        <value>sound2</value>
+      </item>
+    </select>
+    <select ref="/data/C2a_Word2">
+      <label ref="jr:itext('/data/C2a_Word2:label')"/>
+      <hint ref="jr:itext('/data/C2a_Word2:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word2:sound0')"/>
+        <value>sound1</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word2:sound1')"/>
+        <value>sound2</value>
+      </item>
+    </select>
+    <select ref="/data/C2a_Word3">
+      <label ref="jr:itext('/data/C2a_Word3:label')"/>
+      <hint ref="jr:itext('/data/C2a_Word3:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word3:sound0')"/>
+        <value>sound1</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word3:sound1')"/>
+        <value>sound2</value>
+      </item>
+    </select>
+    <select ref="/data/C2a_Word4">
+      <label ref="jr:itext('/data/C2a_Word4:label')"/>
+      <hint ref="jr:itext('/data/C2a_Word4:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word4:sound0')"/>
+        <value>sound1</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word4:sound1')"/>
+        <value>sound2</value>
+      </item>
+    </select>
+    <select ref="/data/C2a_Word5">
+      <label ref="jr:itext('/data/C2a_Word5:label')"/>
+      <hint ref="jr:itext('/data/C2a_Word5:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word5:sound0')"/>
+        <value>sound1</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word5:sound1')"/>
+        <value>sound2</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word5:sound2')"/>
+        <value>earlyStop</value>
+      </item>
+    </select>
+    <select ref="/data/C2a_Word6">
+      <label ref="jr:itext('/data/C2a_Word6:label')"/>
+      <hint ref="jr:itext('/data/C2a_Word6:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word6:sound0')"/>
+        <value>sound1</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word6:sound1')"/>
+        <value>sound2</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word6:sound2')"/>
+        <value>sound3</value>
+      </item>
+    </select>
+    <select ref="/data/C2a_Word7">
+      <label ref="jr:itext('/data/C2a_Word7:label')"/>
+      <hint ref="jr:itext('/data/C2a_Word7:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word7:sound0')"/>
+        <value>sound1</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word7:sound1')"/>
+        <value>sound2</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word7:sound2')"/>
+        <value>sound3</value>
+      </item>
+    </select>
+    <select ref="/data/C2a_Word8">
+      <label ref="jr:itext('/data/C2a_Word8:label')"/>
+      <hint ref="jr:itext('/data/C2a_Word8:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word8:sound0')"/>
+        <value>sound1</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word8:sound1')"/>
+        <value>sound2</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word8:sound2')"/>
+        <value>sound3</value>
+      </item>
+    </select>
+    <select ref="/data/C2a_Word9">
+      <label ref="jr:itext('/data/C2a_Word9:label')"/>
+      <hint ref="jr:itext('/data/C2a_Word9:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word9:sound0')"/>
+        <value>sound1</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word9:sound1')"/>
+        <value>sound2</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word9:sound2')"/>
+        <value>sound3</value>
+      </item>
+    </select>
+    <select ref="/data/C2a_Word10">
+      <label ref="jr:itext('/data/C2a_Word10:label')"/>
+      <hint ref="jr:itext('/data/C2a_Word10:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word10:sound0')"/>
+        <value>sound1</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word10:sound1')"/>
+        <value>sound2</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C2a_Word10:sound2')"/>
+        <value>sound3</value>
+      </item>
+    </select>
+  </h:body>
+</h:html>

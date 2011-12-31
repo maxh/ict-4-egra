@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <title>ICT4EGRA: Code</title>
+      <style type="text/css">
+	p { width: 40em; }
+      </style>
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+   </head>
+   <body>
+     <h1>ICT4EGRA</h1>
+     <h2>Code</h2>
+     <a href="..">Home page</a>
+     <p>Download all code as archive
+     [ <a href="ICT4EGRA_code.zip">.zip</a> ]</p>
+     <h3>Google Apps Script</h3>
+     <ul>
+       <li>Analyze EGRA Results
+	 [ <a href="gas/analyzeEGRAResults.txt">.txt</a> ] </li>
+     </ul>
+     <h3>XForms Surveys</h3>
+     <ul>
+       <li>Multi-Component Assessment: EGRA C0 to C7
+       [ <a href="xml/EGRA_C1toC7.xml">.xml</a> ]</li>
+       <li>Multi-Component Assessment: EGRA C0 and C8
+       [ <a href="xml/EGRA_C8.xml">.xml</a> ]</li>
+       <li>Individual Components</li>
+       <ul>
+	 <li>Component 0: Student Information
+	   [ <a href="xml/C0_StudentInformation.xml">.xml</a> ]</li>
+	 <li>Component 1: Letter Name Knowledge
+	   [ <a href="xml/C1_LetterNameKnowledge.xml">.xml</a> ]</li>
+	 <li>Component 2a: Phonemic Awareness
+	   [ <a href="xml/C2a_PhonemicAwareness.xml">.xml</a> ]</li>
+	 <li>Component 2b: Initial Sound Identification
+	   [ <a href="xml/C2b_PhonemicAwarenessISI.xml">.xml</a> ]</li>
+	 <li>Component 3: Letter Sound Knowledge
+	   [ <a href="xml/C3_LetterSoundKnowledge.xml">.xml</a> ]</li>
+	 <li>Component 4: Familiar Word Reading
+	   [ <a href="xml/C4_FamiliarWordReading.xml">.xml</a> ]</li>
+	 <li>Component 5: Unfamiliar Nonword Decoding
+	   [ <a href="xml/C5_UnfamiliarNonwordDecoding.xml">.xml</a>
+	   ]</li>
+	 <li>Component 6: Passage Reading and Comprehension
+	   [ <a href="xml/C6_PassageReadingAndComprehension.xml">.xml</a>
+	   ]</li>
+	 <li>Component 7: Listening Comprehension
+	   [ <a href="xml/C7_ListeningComprehension.xml">.xml</a>
+	   ]</li>
+	 <li>Component 8: Dictation [ <a href="xml/C8_Dictation.xml">
+	 .xml </a> ] </li>
+       </ul>
+       <li>Multi-Component Assessment: Template
+       [ <a href="xml/EGRA_template.xml">.xml</a> ]</li>
+       </li>
+     </ul>
+    <h3>Shell Scripts</h3>
+    <ul>
+       <li>addComponents.sh [ <a href="shell/addComponents.sh">.sh</a>
+       ]</li>
+       <li>updateWords.sh [ <a href="shell/updateWords.sh">.sh</a>
+       ]</li>
+       <li>updateLetters.sh [ <a href="shell/updateLetters.sh">.sh</a>
+       ]</li>
+       <li>updatePassage.sh [ <a href="shell/updatePassage.sh">.sh</a> ]</li>
+    </ul>
+   </body>
+</html>

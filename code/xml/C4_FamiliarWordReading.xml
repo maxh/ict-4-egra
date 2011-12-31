@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Component 4: Familiar Word Reading</h:title>
+    <model>
+      <instance>
+        <data id="4_Familiar_Word_Reading_v1">
+          <C4_Instructions/>
+          <C4_Assessment/>
+          <C4_LastWord/>
+          <C4_Time>0</C4_Time>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/C4_Instructions:label">
+            <value>Component 4: Familiar Word Reading</value>
+          </text>
+          <text id="/data/C4_Instructions:hint">
+            <value>Show the student the sheet of familiar words. Start the timer when the student reads the first word and mark correctly pronounced words.
+
+After 60 seconds, say "Stop," and record the number of the final word read.</value>
+          </text>
+          <text id="/data/C4_Assessment:label">
+            <value>Select correctly pronounced words.</value>
+          </text>
+          <text id="/data/C4_Assessment:hint">
+            <value>Remember the number of the last word read or attempted.</value>
+          </text>
+          <text id="/data/C4_LastWord:label">
+            <value>Enter the number of the last word read or attempted</value>
+          </text>
+          <text id="/data/C4_LastWord:hint">
+            <value>Enter "0" for early finish if the student failed to correctly read the first 5 words; "50" if the student read all words</value>
+          </text>
+          <text id="/data/C4_Time:label">
+            <value>Enter the time left on the stopwatch in seconds</value>
+          </text>
+          <text id="/data/C4_Time:hint">
+            <value>0 to 60 seconds</value>
+          </text>
+          <text id="/data/C4_Assessment:word01">
+            <value>01: go</value>
+          </text>
+	  <text id="/data/C4_Assessment:word02">
+	    <value>02: sad</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word03">
+	    <value>03: up</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word04">
+	    <value>04: find</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word05">
+	    <value>05: come</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word06">
+	    <value>06: help</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word07">
+	    <value>07: two</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word08">
+	    <value>08: run</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word09">
+	    <value>09: see</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word10">
+	    <value>10: down</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word11">
+	    <value>11: red</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word12">
+	    <value>12: and</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word13">
+	    <value>13: play</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word14">
+	    <value>14: at</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word15">
+	    <value>15: you</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word16">
+	    <value>16: chair</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word17">
+	    <value>17: man</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word18">
+	    <value>18: when</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word19">
+	    <value>19: now</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word20">
+	    <value>20: under</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word21">
+	    <value>21: please</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word22">
+	    <value>22: soon</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word23">
+	    <value>23: like</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word24">
+	    <value>24: they</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word25">
+	    <value>25: good</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word26">
+	    <value>26: thank</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word27">
+	    <value>27: going</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word28">
+	    <value>28: are</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word29">
+	    <value>29: know</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word30">
+	    <value>30: him</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word31">
+	    <value>31: jump</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word32">
+	    <value>32: once</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word33">
+	    <value>33: ask</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word34">
+	    <value>34: fly</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word35">
+	    <value>35: want</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word36">
+	    <value>36: must</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word37">
+	    <value>37: green</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word38">
+	    <value>38: sing</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word39">
+	    <value>39: thos</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word40">
+	    <value>40: always</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word41">
+	    <value>41: many</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word42">
+	    <value>42: which</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word43">
+	    <value>43: upon</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word44">
+	    <value>44: sit</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word45">
+	    <value>45: clean</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word46">
+	    <value>46: stop</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word47">
+	    <value>47: big</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word48">
+	    <value>48: me</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word49">
+	    <value>49: house</value>
+	  </text>
+	  <text id="/data/C4_Assessment:word50">
+	    <value>50: girl</value>
+	  </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/C4_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C4_Assessment" type="select"/>
+      <bind nodeset="/data/C4_LastWord" type="int" required="true()" constraint="(. &gt;= 0 and . &lt;= 50)"/>
+      <bind nodeset="/data/C4_Time" type="int" constraint="(. &gt;= 0 and . &lt;= 60)"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/C4_Instructions">
+      <label ref="jr:itext('/data/C4_Instructions:label')"/>
+      <hint ref="jr:itext('/data/C4_Instructions:hint')"/>
+    </input>
+    <select ref="/data/C4_Assessment">
+      <label ref="jr:itext('/data/C4_Assessment:label')"/>
+      <hint ref="jr:itext('/data/C4_Assessment:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C4_Assessment:word01')"/>
+        <value>01</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word02')"/>
+	<value>02</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word03')"/>
+	<value>03</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word04')"/>
+	<value>04</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word05')"/>
+	<value>05</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word06')"/>
+	<value>06</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word07')"/>
+	<value>07</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word08')"/>
+	<value>08</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word09')"/>
+	<value>09</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word10')"/>
+	<value>10</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word11')"/>
+	<value>11</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word12')"/>
+	<value>12</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word13')"/>
+	<value>13</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word14')"/>
+	<value>14</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word15')"/>
+	<value>15</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word16')"/>
+	<value>16</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word17')"/>
+	<value>17</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word18')"/>
+	<value>18</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word19')"/>
+	<value>19</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word20')"/>
+	<value>20</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word21')"/>
+	<value>21</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word22')"/>
+	<value>22</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word23')"/>
+	<value>23</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word24')"/>
+	<value>24</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word25')"/>
+	<value>25</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word26')"/>
+	<value>26</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word27')"/>
+	<value>27</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word28')"/>
+	<value>28</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word29')"/>
+	<value>29</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word30')"/>
+	<value>30</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word31')"/>
+	<value>31</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word32')"/>
+	<value>32</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word33')"/>
+	<value>33</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word34')"/>
+	<value>34</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word35')"/>
+	<value>35</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word36')"/>
+	<value>36</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word37')"/>
+	<value>37</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word38')"/>
+	<value>38</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word39')"/>
+	<value>39</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word40')"/>
+	<value>40</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word41')"/>
+	<value>41</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word42')"/>
+	<value>42</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word43')"/>
+	<value>43</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word44')"/>
+	<value>44</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word45')"/>
+	<value>45</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word46')"/>
+	<value>46</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word47')"/>
+	<value>47</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word48')"/>
+	<value>48</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word49')"/>
+	<value>49</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C4_Assessment:word50')"/>
+	<value>50</value>
+      </item>
+    </select>
+    <input ref="/data/C4_LastWord">
+      <label ref="jr:itext('/data/C4_LastWord:label')"/>
+      <hint ref="jr:itext('/data/C4_LastWord:hint')"/>
+    </input>
+    <input ref="/data/C4_Time">
+      <label ref="jr:itext('/data/C4_Time:label')"/>
+      <hint ref="jr:itext('/data/C4_Time:hint')"/>
+    </input>
+  </h:body>
+</h:html>

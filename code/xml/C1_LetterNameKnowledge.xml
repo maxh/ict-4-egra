@@ -1,0 +1,768 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Component 1: Letter Name Knowledge</h:title>
+    <model>
+      <instance>
+        <data id="C1_LetterNameKnowledge_v1">
+          <C1_Instructions/>
+          <C1_Assessment/>
+          <C1_LastLetter/>
+          <C1_Time>0</C1_Time>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/C1_Instructions:label">
+            <value>Component 1: Letter Name Knowledge</value>
+          </text>
+          <text id="/data/C1_Instructions:hint">
+            <value>Start the timer when the child reads the first letter. There are checkboxes for each letter on the next page. Follow along with the child and check correct words. Count self-corrections as correct.
+
+You may uncheck letters after they have been checked.</value>
+          </text>
+          <text id="/data/C1_Assessment:label">
+            <value>Select all correctly pronounced letters.</value>
+          </text>
+          <text id="/data/C1_Assessment:hint">
+            <value>Remember the number of the last character read.</value>
+          </text>
+          <text id="/data/C1_LastLetter:label">
+            <value>Enter the number of the last character spoken</value>
+          </text>
+          <text id="/data/C1_LastLetter:hint">
+            <value>Enter "0" for early finish; "100" if the student read all letters</value>
+          </text>
+          <text id="/data/C1_Time:label">
+            <value>Enter the time left on the stopwatch in seconds</value>
+          </text>
+          <text id="/data/C1_Time:hint">
+            <value>Range: 0 to 60 seconds (enter 0 seconds if the student did not finish)</value>
+          </text>
+          <text id="/data/C1_Assessment:letter01">
+            <value>01: L</value>
+          </text>
+	  <text id="/data/C1_Assessment:letter02">
+	    <value>02: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter03">
+	    <value>03: h</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter04">
+	    <value>04: R</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter05">
+	    <value>05: S</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter06">
+	    <value>06: y</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter07">
+	    <value>07: E</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter08">
+	    <value>08: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter09">
+	    <value>09: n</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter10">
+	    <value>10: T</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter11">
+	    <value>11: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter12">
+	    <value>12: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter13">
+	    <value>13: T</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter14">
+	    <value>14: D</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter15">
+	    <value>15: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter16">
+	    <value>16: t</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter17">
+	    <value>17: a</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter18">
+	    <value>18: d</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter19">
+	    <value>19: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter20">
+	    <value>20: w</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter21">
+	    <value>21: h</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter22">
+	    <value>22: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter23">
+	    <value>23: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter24">
+	    <value>24: m</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter25">
+	    <value>25: U</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter26">
+	    <value>26: r</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter27">
+	    <value>27: L</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter28">
+	    <value>28: G</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter29">
+	    <value>29: R</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter30">
+	    <value>30: U</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter31">
+	    <value>31: g</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter32">
+	    <value>32: R</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter33">
+	    <value>33: B</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter34">
+	    <value>34: E</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter35">
+	    <value>35: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter36">
+	    <value>36: f</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter37">
+	    <value>37: m</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter38">
+	    <value>38: t</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter39">
+	    <value>39: s</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter40">
+	    <value>40: r</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter41">
+	    <value>41: S</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter42">
+	    <value>42: T</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter43">
+	    <value>43: C</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter44">
+	    <value>44: N</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter45">
+	    <value>45: p</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter46">
+	    <value>46: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter47">
+	    <value>47: F</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter48">
+	    <value>48: c</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter49">
+	    <value>49: a</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter50">
+	    <value>50: E</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter51">
+	    <value>51: y</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter52">
+	    <value>52: s</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter53">
+	    <value>53: Q</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter54">
+	    <value>54: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter55">
+	    <value>55: M</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter56">
+	    <value>56: C</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter57">
+	    <value>57: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter58">
+	    <value>58: t</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter59">
+	    <value>59: n</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter60">
+	    <value>60: P</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter61">
+	    <value>61: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter62">
+	    <value>62: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter63">
+	    <value>63: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter64">
+	    <value>64: s</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter65">
+	    <value>65: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter66">
+	    <value>66: F</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter67">
+	    <value>67: h</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter68">
+	    <value>68: u</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter69">
+	    <value>69: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter70">
+	    <value>70: t</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter71">
+	    <value>71: R</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter72">
+	    <value>72: q</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter73">
+	    <value>73: H</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter74">
+	    <value>74: b</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter75">
+	    <value>75: S</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter76">
+	    <value>76: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter77">
+	    <value>77: g</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter78">
+	    <value>78: m</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter79">
+	    <value>79: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter80">
+	    <value>80: L</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter81">
+	    <value>81: L</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter82">
+	    <value>82: i</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter83">
+	    <value>83: N</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter84">
+	    <value>84: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter85">
+	    <value>85: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter86">
+	    <value>86: o</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter87">
+	    <value>87: E</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter88">
+	    <value>88: r</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter89">
+	    <value>89: p</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter90">
+	    <value>90: X</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter91">
+	    <value>91: N</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter92">
+	    <value>92: A</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter93">
+	    <value>93: c</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter94">
+	    <value>94: D</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter95">
+	    <value>95: d</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter96">
+	    <value>96: I</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter97">
+	    <value>97: O</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter98">
+	    <value>98: j</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter99">
+	    <value>99: e</value>
+	  </text>
+	  <text id="/data/C1_Assessment:letter100">
+	    <value>100: n</value>
+	  </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/C1_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C1_Assessment" type="select"/>
+      <bind nodeset="/data/C1_LastLetter" type="int" required="true()" constraint="(. &gt;= 0 and . &lt;= 100)"/>
+      <bind nodeset="/data/C1_Time" type="int" constraint="(. &gt;= 0 and . &lt;= 60)" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/C1_Instructions">
+      <label ref="jr:itext('/data/C1_Instructions:label')"/>
+      <hint ref="jr:itext('/data/C1_Instructions:hint')"/>
+    </input>
+    <select ref="/data/C1_Assessment">
+      <label ref="jr:itext('/data/C1_Assessment:label')"/>
+      <hint ref="jr:itext('/data/C1_Assessment:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C1_Assessment:letter01')"/>
+        <value>01</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter02')"/>
+	<value>02</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter03')"/>
+	<value>03</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter04')"/>
+	<value>04</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter05')"/>
+	<value>05</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter06')"/>
+	<value>06</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter07')"/>
+	<value>07</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter08')"/>
+	<value>08</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter09')"/>
+	<value>09</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter10')"/>
+	<value>10</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter11')"/>
+	<value>11</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter12')"/>
+	<value>12</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter13')"/>
+	<value>13</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter14')"/>
+	<value>14</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter15')"/>
+	<value>15</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter16')"/>
+	<value>16</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter17')"/>
+	<value>17</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter18')"/>
+	<value>18</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter19')"/>
+	<value>19</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter20')"/>
+	<value>20</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter21')"/>
+	<value>21</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter22')"/>
+	<value>22</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter23')"/>
+	<value>23</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter24')"/>
+	<value>24</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter25')"/>
+	<value>25</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter26')"/>
+	<value>26</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter27')"/>
+	<value>27</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter28')"/>
+	<value>28</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter29')"/>
+	<value>29</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter30')"/>
+	<value>30</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter31')"/>
+	<value>31</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter32')"/>
+	<value>32</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter33')"/>
+	<value>33</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter34')"/>
+	<value>34</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter35')"/>
+	<value>35</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter36')"/>
+	<value>36</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter37')"/>
+	<value>37</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter38')"/>
+	<value>38</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter39')"/>
+	<value>39</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter40')"/>
+	<value>40</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter41')"/>
+	<value>41</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter42')"/>
+	<value>42</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter43')"/>
+	<value>43</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter44')"/>
+	<value>44</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter45')"/>
+	<value>45</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter46')"/>
+	<value>46</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter47')"/>
+	<value>47</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter48')"/>
+	<value>48</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter49')"/>
+	<value>49</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter50')"/>
+	<value>50</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter51')"/>
+	<value>51</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter52')"/>
+	<value>52</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter53')"/>
+	<value>53</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter54')"/>
+	<value>54</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter55')"/>
+	<value>55</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter56')"/>
+	<value>56</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter57')"/>
+	<value>57</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter58')"/>
+	<value>58</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter59')"/>
+	<value>59</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter60')"/>
+	<value>60</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter61')"/>
+	<value>61</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter62')"/>
+	<value>62</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter63')"/>
+	<value>63</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter64')"/>
+	<value>64</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter65')"/>
+	<value>65</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter66')"/>
+	<value>66</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter67')"/>
+	<value>67</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter68')"/>
+	<value>68</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter69')"/>
+	<value>69</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter70')"/>
+	<value>70</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter71')"/>
+	<value>71</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter72')"/>
+	<value>72</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter73')"/>
+	<value>73</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter74')"/>
+	<value>74</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter75')"/>
+	<value>75</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter76')"/>
+	<value>76</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter77')"/>
+	<value>77</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter78')"/>
+	<value>78</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter79')"/>
+	<value>79</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter80')"/>
+	<value>80</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter81')"/>
+	<value>81</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter82')"/>
+	<value>82</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter83')"/>
+	<value>83</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter84')"/>
+	<value>84</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter85')"/>
+	<value>85</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter86')"/>
+	<value>86</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter87')"/>
+	<value>87</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter88')"/>
+	<value>88</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter89')"/>
+	<value>89</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter90')"/>
+	<value>90</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter91')"/>
+	<value>91</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter92')"/>
+	<value>92</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter93')"/>
+	<value>93</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter94')"/>
+	<value>94</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter95')"/>
+	<value>95</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter96')"/>
+	<value>96</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter97')"/>
+	<value>97</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter98')"/>
+	<value>98</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter99')"/>
+	<value>99</value>
+      </item>
+      <item>
+	<label ref="jr:itext('/data/C1_Assessment:letter100')"/>
+	<value>100</value>
+      </item>
+    </select>
+    <input ref="/data/C1_LastLetter">
+      <label ref="jr:itext('/data/C1_LastLetter:label')"/>
+      <hint ref="jr:itext('/data/C1_LastLetter:hint')"/>
+    </input>
+    <input ref="/data/C1_Time">
+      <label ref="jr:itext('/data/C1_Time:label')"/>
+      <hint ref="jr:itext('/data/C1_Time:hint')"/>
+    </input>
+  </h:body>
+</h:html>

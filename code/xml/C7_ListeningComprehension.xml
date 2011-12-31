@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Component 7: Listening Comprehension</h:title>
+    <model>
+      <instance>
+        <data id="C7_ListeningComprehension_v1">
+          <C7_Instructions/>
+          <C7_Passage/>
+          <C7_Question1/>
+          <C7_Question2/>
+          <C7_Question3/>
+          <C7_Question4/>
+          <C7_Question5/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/C7_Instructions:label">
+            <value>Component 7: Listening Comprehension</value>
+          </text>
+          <text id="/data/C7_Instructions:hint">
+            <value>Read the story on the next page aloud to the child (only one at a time), slowly (about 1 word per second). Say: "I'm going to read you a short story aloud ONCE and then ask you some questions. Please listen carefully and answer the questions as best you can. Do you understand what you are to do?"</value>
+          </text>
+          <text id="/data/C7_Passage:label">
+            <value>Read this story aloud to the child:</value>
+          </text>
+          <text id="/data/C7_Passage:hint">
+            <value>The gray duckling fell in the mud. "Help me," she cried. A green frog came to help, but he fell in too. "What now?" asked the frog. "I see something that leads to land!" the duckling replied. They both climbed on the log. "We are saved!" they shouted.</value>
+          </text>
+          <text id="/data/C7_Questions:correct">
+            <value>Correct</value>
+          </text>
+          <text id="/data/C7_Questions:incorrect">
+            <value>Incorrect</value>
+          </text>
+          <text id="/data/C7_Questions:noResponse">
+            <value>No Response</value>
+          </text>
+          <text id="/data/C7_Question1:label">
+            <value>What is a duckling?</value>
+          </text>
+          <text id="/data/C7_Question1:hint">
+            <value>Answers: duck; little duck</value>
+          </text>
+          <text id="/data/C7_Question2:label">
+            <value>Who fell in the mud last?</value>
+          </text>
+          <text id="/data/C7_Question2:hint">
+            <value>Answers: frog</value>
+          </text>
+          <text id="/data/C7_Question3:label">
+            <value>What did the duckling see that was important?</value>
+          </text>
+          <text id="/data/C7_Question3:hint">
+            <value>Answers: log</value>
+          </text>
+          <text id="/data/C7_Question4:label">
+            <value>How did the frog and the duck get out of the mud?</value>
+          </text>
+          <text id="/data/C7_Question4:hint">
+            <value>Answers: climbed on log</value>
+          </text>
+          <text id="/data/C7_Question5:label">
+            <value>Why do you think the frog and the duck are friends?</value>
+          </text>
+          <text id="/data/C7_Question5:hint">
+            <value>Answers: duck; little duck</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/C7_Instructions" type="string" readonly="true()"/>
+      <bind nodeset="/data/C7_Passage" type="string" readonly="true()"/>
+      <bind nodeset="/data/C7_Question1" type="select1" required="true()"/>
+      <bind nodeset="/data/C7_Question2" type="select1" required="true()"/>
+      <bind nodeset="/data/C7_Question3" type="select1" required="true()"/>
+      <bind nodeset="/data/C7_Question4" type="select1" required="true()"/>
+      <bind nodeset="/data/C7_Question5" type="select1" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/C7_Instructions">
+      <label ref="jr:itext('/data/C7_Instructions:label')"/>
+      <hint ref="jr:itext('/data/C7_Instructions:hint')"/>
+    </input>
+    <input ref="/data/C7_Passage">
+      <label ref="jr:itext('/data/C7_Passage:label')"/>
+      <hint ref="jr:itext('/data/C7_Passage:hint')"/>
+    </input>
+    <select1 ref="/data/C7_Question1">
+      <label ref="jr:itext('/data/C7_Question1:label')"/>
+      <hint ref="jr:itext('/data/C7_Question1:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C7_Question2">
+      <label ref="jr:itext('/data/C7_Question2:label')"/>
+      <hint ref="jr:itext('/data/C7_Question2:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C7_Question3">
+      <label ref="jr:itext('/data/C7_Question3:label')"/>
+      <hint ref="jr:itext('/data/C7_Question3:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C7_Question4">
+      <label ref="jr:itext('/data/C7_Question4:label')"/>
+      <hint ref="jr:itext('/data/C7_Question4:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C7_Question5">
+      <label ref="jr:itext('/data/C7_Question5:label')"/>
+      <hint ref="jr:itext('/data/C7_Question5:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C7_Questions:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+    </select1>
+  </h:body>
+</h:html>

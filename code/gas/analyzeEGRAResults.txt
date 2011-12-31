@@ -1,0 +1,199 @@
+// Scores and summarizes raw data from the ICT4EGRA system in Google Spreadsheets.
+// Copy and paste this code into the Google Spreadsheets script editor to run it.
+
+function findCol(sheet,fieldName) {
+    var data = sheet.getDataRange().getValues();
+    // find the column with the title "fieldName"
+    for( var i in data[0] )
+	if( fieldName == data[0][i] )
+	    // get the range in that column from row 2 until the bottom
+	    return parseInt(i)+1;
+    return null;
+}
+
+function addStudentInformation(raw, scores, row, col) {
+    if (row==1) {
+	scores.getRange(row,col++).setValue("Student ID");
+	scores.getRange(row,col++).setValue("Last Name");
+	scores.getRange(row,col++).setValue("First Name");
+	scores.getRange(row,col++).setValue("Gender");
+	scores.getRange(row,col++).setValue("Grade");
+	return col;
+    }
+    var dataCol = findCol(raw, "C0_StudentID");
+    var id = raw.getRange(row, dataCol++).getValue();
+    var last = raw.getRange(row, dataCol++).getValue();
+    var first = raw.getRange(row, dataCol++).getValue();
+    var gender = raw.getRange(row, dataCol++).getValue();
+    var grade = raw.getRange(row, dataCol++).getValue();
+    scores.getRange(row,col++).setValue(id);
+    scores.getRange(row,col++).setValue(last);
+    scores.getRange(row,col++).setValue(first);
+    scores.getRange(row,col++).setValue(gender);
+    scores.getRange(row,col++).setValue(grade);
+    return col;
+}
+
+function scoreTimedComponent(componentNum, raw, scores, row, col) {
+    if (row==1) {
+	var items = "letters";
+	if (componentNum == 4)
+	    items = "words";
+	if (componentNum == 5)
+	    items = "nonwords";
+	scores.getRange(row,col++).setValue("C"+componentNum+": Total "+items+" read");
+	scores.getRange(row,col++).setValue("C"+componentNum+": Total "+items+" incorrect");
+	scores.getRange(row,col++).setValue("C"+componentNum+": Time remaining on stopwatch");
+	scores.getRange(row,col++).setValue("C"+componentNum+": Correct "+items+" per minute");
+	return col;
+    }
+    var dataCol = findCol(raw, "C"+componentNum+"_Assessment");
+    // find the number of items checked
+    numOfItems = 0; // items could be letters, words, or nonwords
+    var spaced = raw.getRange(row, dataCol++).getValue();
+    if (spaced) // might be empty if zero items were checked
+	numOfItems = spaced.split(" ").length;
+    lastItem = raw.getRange(row, dataCol++).getValue();
+    seconds = raw.getRange(row, dataCol++).getValue();
+    if (seconds=="null" || seconds.length==0)
+	seconds = 0;
+  
+    // if checked values are correct
+    scores.getRange(row,col++).setValue(lastItem);
+    scores.getRange(row,col++).setValue(lastItem-numOfItems);
+    scores.getRange(row,col++).setValue(seconds);
+    scores.getRange(row,col++).setValue((numOfItems)/((60 - seconds)/60));
+  
+    return col;
+    /* if checked letters are incorrect
+  scores.getRange(row,col++).setValue(lastItem);
+  scores.getRange(row,col++).setValue(numOfItems);
+  scores.getRange(row,col++).setValue(seconds);
+  scores.getRange(row,col++).setValue((lastItem-numOfItems)/((60 - seconds)/60)); */
+}
+
+function scoreC2a(raw, scores, row, col) {
+    // 2*5 + 3*5 = 25 phonemes total (5 2-phoneme words, 5 3-phoneme words)
+    var NUM_TOTAL_PHONEMES = 25;
+  
+    if (row==1) {
+	scores.getRange(row,col++).setValue("C2a: Total phonemes attempted");
+	scores.getRange(row,col++).setValue("C2a: Total correct phonemes");
+	scores.getRange(row,col++).setValue("C2a: Correct phonemes as a proportion of total");
+	return col;
+    }
+    var dataCol = findCol(raw, "C2a_Word1");
+    // the next ten columns are all words
+    var phonemes = raw.getRange(row, dataCol, 1, 10).getValues();
+    var totalChecked = 0;
+    for ( var i=0; i<10; i++ ) {
+	if(phonemes[0][i]) // may be null if empty
+	    totalChecked+=phonemes[0][i].split(" ").length;
+    }  
+    // if checked letters are correct
+    scores.getRange(row,col++).setValue(NUM_TOTAL_PHONEMES);
+    scores.getRange(row,col++).setValue(totalChecked);
+    scores.getRange(row,col++).setValue(totalChecked/NUM_TOTAL_PHONEMES);
+    return col;
+  
+    /* if checked letters are incorrect
+  scores.getRange(row,col++).setValue(NUM_TOTAL_PHONEMES);
+  scores.getRange(row,col++).setValue(NUM_TOTAL_PHONEMES-totalChecked);
+  scores.getRange(row,col++).setValue((NUM_TOTAL_PHONEMES-totalChecked)/NUM_TOTAL_PHONEMES);
+  return col; */
+}
+
+function scoreC2b(raw, scores, row, col) {
+    var NUM_TOTAL_WORDS = 10;
+    if (row==1) {
+	scores.getRange(row,col++).setValue("C2b: Total intitial phonemes attempted");
+	scores.getRange(row,col++).setValue("C2b: Total correct initial phonemes");
+	scores.getRange(row,col++).setValue("C2b: Correct phonemes as a proportion of total");
+	return col;
+    }
+    var dataCol = findCol(raw, "C2b_Word1");
+    var phonemes = raw.getRange(row, dataCol, 1, 10).getValues();
+    var totalCorrect = 0;
+    for ( var i=0; i<10; i++ ) {
+	if(phonemes[0][i]=="correct")
+	    totalCorrect++;
+    }
+    scores.getRange(row,col++).setValue(NUM_TOTAL_WORDS);
+    scores.getRange(row,col++).setValue(totalCorrect);
+    scores.getRange(row,col++).setValue(totalCorrect/NUM_TOTAL_WORDS);
+    return col;
+}
+
+function scoreC6(raw, scores, row, col) {
+    var NUM_WORDS_IN_STORY = 60;
+    var NUM_QUESTIONS = 4;
+  
+    if (row==1) {
+	scores.getRange(row,col++).setValue("C6: Number of words attempted");
+	scores.getRange(row,col++).setValue("C6: Number of words read incorrectly");
+	scores.getRange(row,col++).setValue("C6: Time remaining on stopwatch");
+	scores.getRange(row,col++).setValue("C6: Correct words per minute");
+	scores.getRange(row,col++).setValue("C6: Comprehesion questions asked");
+	scores.getRange(row,col++).setValue("C6: Comprehesion questions answered correctly");
+	return col;
+    }
+    var dataCol = findCol(raw, "C6_PassageWords");
+    var spaced = raw.getRange(row, dataCol++).getValue();
+    var numOfCheckedWords = 0;
+    if (spaced) // might be empty if zero words were checked
+    numOfChrect") {
+      correct++;
+      attempted++;
+    }
+    else if (answers[0][i]=="incorrect")
+      attempted++;
+    else if (answers[0][i]=="noResponse")
+      attempted++;
+  }
+  
+  scores.getRange(row,col++).setValue(NUM_WORDS_IN_STORY);
+  scores.getRange(row,col++).setValue(lastWord-numOfCheckedWords);
+  scores.getRange(row,col++).setValue(secondsRemaining);
+  scores.getRange(row,col++).setValue(numOfCheckedWords/((60-secondsRemaining)/60));
+  scores.getRange(row,s[0][i]=="correct")
+      correct++;
+  }
+  
+  scores.getRange(row,col++).setValue(NUM_QUESTIONS);
+  scores.getRange(row,col++).setValue(correct);
+  return col;
+}
+
+function buildScoresSheet(raw,scores) {
+  scores.clear();
+
+  // find the number of entries we need to loop through
+  var data = raw.getDataRange().getValues();
+  var numStudents = data.length;
+  var data = raw.getDataRange().getValues();// C6
+    col=scoreC7(raw, scores, row, col); // C7
+  }
+  
+  // how many columns until the first data column?
+  return addStudentInformation(raw, scores, 1, 1);
+}
+
+function buildSummarySheet(scores,summary,firstColumnWithData) {
+  summary.clear();
+  
+  summary.getRange(1,1).setValue("EGRA Average Results");
+  summary.getRange(1,1).setFontWeight("bold");
+  
+  var rows = scores.getDataRange().getValues().length;
+.getSheets()[0];
+  
+  var scoresSheet = spreadsheet.getSheetByName("Scores");
+  if (!scoresSheet)
+    scoresSheet = spreadsheet.insertSheet("Scores"); 
+  var firstColWithData = buildScoresSheet(rawDataSheet,scoresSheet);
+  
+  var summarySheet = spreadsheet.getSheetByName("Summary");
+  if (!summarySheet)
+    summarySheet = spreadsheet.insertSheet("Summary");
+  buildSummarySheet(scoresSheet,summarySheet,firstColWithData);
+}

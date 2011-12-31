@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Component 6: Passage Reading and Comprehension</h:title>
+    <model>
+      <instance>
+        <data id="C6_PassageReadingAndComprehension">
+          <C6_Instructions/>
+          <C6_PassageWords/>
+          <C6_PassageLastWordRead/>
+          <C6_PassageReadingTime>0</C6_PassageReadingTime>
+          <C6_ComprehensionQuestion1/>
+	  <C6_ComprehensionQuestion2/>
+	  <C6_ComprehensionQuestion3/>
+	  <C6_ComprehensionQuestion4/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/C6_Instructions:label">
+            <value>Component 6: Passage Reading and Comprehension</value>
+          </text>
+          <text id="/data/C6_Instructions:hint">
+            <value>Ask the child to read aloud the story on the student form. Start the time when the child reads the first word. When 60 seconds are up, remove the passage from in front of the child and ask the follow-up questions.</value>
+          </text>
+          <text id="/data/C6_PassageWords:label">
+            <value>Mark correctly pronounced words in the passage.</value>
+          </text>
+          <text id="/data/C6_PassageWords:hint">
+            <value>Remember the number of the last word the child was reading when 60 seconds are up.</value>
+          </text>
+          <text id="/data/C6_PassageWords:word01">
+            <value>01: My</value>
+          </text>
+	  <text id="/data/C6_PassageWords:word02">
+	    <value>02: name</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word03">
+	    <value>03: is</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word04">
+	    <value>04: Pat.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word05">
+	    <value>05: I</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word06">
+	    <value>06: live</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word07">
+	    <value>07: on</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word08">
+	    <value>08: a</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word09">
+	    <value>09: farm</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word10">
+	    <value>10: with</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word11">
+	    <value>11: my</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word12">
+	    <value>12: mother,</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word13">
+	    <value>13: father</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word14">
+	    <value>14: and</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word15">
+	    <value>15: brother</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word16">
+	    <value>16: Sam.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word17">
+	    <value>17: My</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word18">
+	    <value>18: family</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word19">
+	    <value>19: is</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word20">
+	    <value>20: happy.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word21">
+	    <value>21: One</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word22">
+	    <value>22: day</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word23">
+	    <value>23: Sam</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word24">
+	    <value>24: planted</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word25">
+	    <value>25: seeds</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word26">
+	    <value>26: with</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word27">
+	    <value>27: father.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word28">
+	    <value>28: A</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word29">
+	    <value>29: snake</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word30">
+	    <value>30: bit</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word31">
+	    <value>31: him!</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word32">
+	    <value>32: Mother</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word33">
+	    <value>33: knew</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word34">
+	    <value>34: what</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word35">
+	    <value>35: to</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word36">
+	    <value>36: do.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word37">
+	    <value>37: She</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word38">
+	    <value>38: put</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word39">
+	    <value>39: wet</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word40">
+	    <value>40: cloths</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word41">
+	    <value>41: and</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word42">
+	    <value>42: leaves</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word43">
+	    <value>43: on</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word44">
+	    <value>44: his</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word45">
+	    <value>45: leg.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word46">
+	    <value>46: The</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word47">
+	    <value>47: next</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word48">
+	    <value>48: day,</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word49">
+	    <value>49: Sam</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word50">
+	    <value>50: was</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word51">
+	    <value>51: back</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word52">
+	    <value>52: in</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word53">
+	    <value>53: the</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word54">
+	    <value>54: field</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word55">
+	    <value>55: with</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word56">
+	    <value>56: father.</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word57">
+	    <value>57: We</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word58">
+	    <value>58: were</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word59">
+	    <value>59: happy</value>
+	  </text>
+	  <text id="/data/C6_PassageWords:word60">
+	    <value>60: again.</value>
+	  </text>
+          <text id="/data/C6_PassageLastWordRead:label">
+            <value>Enter the number of the last word the student read before time was up.</value>
+          </text>
+          <text id="/data/C6_PassageLastWordRead:hint">
+            <value>Enter "0"  to indicate an "early stop" if the student did not read any of the first ten words correctly. Enter 60 if the student finished the entire story.</value>
+          </text>
+          <text id="/data/C6_PassageReadingTime:label">
+            <value>How many seconds were left on the stopwatch when the student finished reading the story?</value>
+          </text>
+          <text id="/data/C6_PassageReadingTime:hint">
+            <value>Enter "0" if the child did not finish.</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestions:correct">
+            <value>Correct</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestions:incorrect">
+            <value>Incorrect</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestions:noResponse">
+            <value>No Response</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestions:notRead">
+            <value>Student did not read this part of the story</value>
+          </text>	  
+          <text id="/data/C6_ComprehensionQuestion1:label">
+            <value>How many people are in Pat's family?</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion1:hint">
+            <value>Answers: four; mother, father, Sam, Pat</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion2:label">
+            <value>Sam's family was happy. Then something happened. What was it?</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion2:hint">
+            <value>Answer: a snake bit Sam</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion3:label">
+            <value>Where did the snake bite Sam? How did Sam get well?</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion3:hint">
+            <value>Answers: leg | his mother helped him; put wet cloths and leaves on his leg</value> 
+          </text>
+          <text id="/data/C6_ComprehensionQuestion4:label">
+            <value>What made the family happy again? What do you think happened to the snake?</value>
+          </text>
+          <text id="/data/C6_ComprehensionQuestion4:hint">
+            <value>Answers: Sam was healed | ran off; Pat or father killed it; or any reasonable answer</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/C6_Instructions" type="int" readonly="true()"/>
+      <bind nodeset="/data/C6_PassageWords" type="select"/>
+      <bind nodeset="/data/C6_PassageLastWordRead" type="int" constraint="(. &gt;= 0 and . &lt;= 60)" required="true()"/>
+      <bind nodeset="/data/C6_PassageReadingTime" type="int" constraint="(. &gt;= 0 and . &lt;= 60)" required="true()"/>
+      <bind nodeset="/data/C6_ComprehensionQuestion1" type="select1" required="true()"/>
+      <bind nodeset="/data/C6_ComprehensionQuestion2" type="select1" required="true()"/>
+      <bind nodeset="/data/C6_ComprehensionQuestion3" type="select1" required="true()"/>
+      <bind nodeset="/data/C6_ComprehensionQuestion4" type="select1" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/C6_Instructions">
+      <label ref="jr:itext('/data/C6_Instructions:label')"/>
+      <hint ref="jr:itext('/data/C6_Instructions:hint')"/>
+    </input>
+    <select ref="/data/C6_PassageWords">
+      <label ref="jr:itext('/data/C6_PassageWords:label')"/>
+      <hint ref="jr:itext('/data/C6_PassageWords:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word01')"/>
+        <value>word01</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word02')"/>
+        <value>word02</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word03')"/>
+        <value>word03</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word04')"/>
+        <value>word04</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word05')"/>
+        <value>word05</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word06')"/>
+        <value>word06</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word07')"/>
+        <value>word07</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word08')"/>
+        <value>word08</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word09')"/>
+        <value>word09</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word10')"/>
+        <value>word10</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word11')"/>
+        <value>word11</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word12')"/>
+        <value>word12</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word13')"/>
+        <value>word13</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word14')"/>
+        <value>word14</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word15')"/>
+        <value>word15</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word16')"/>
+        <value>word16</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word17')"/>
+        <value>word17</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word18')"/>
+        <value>word18</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word19')"/>
+        <value>word19</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word20')"/>
+        <value>word20</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word21')"/>
+        <value>word21</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word22')"/>
+        <value>word22</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word23')"/>
+        <value>word23</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word24')"/>
+        <value>word24</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word25')"/>
+        <value>word25</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word26')"/>
+        <value>word26</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word27')"/>
+        <value>word27</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word28')"/>
+        <value>word28</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word29')"/>
+        <value>word29</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word30')"/>
+        <value>word30</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word31')"/>
+        <value>word31</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word32')"/>
+        <value>word32</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word33')"/>
+        <value>word33</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word34')"/>
+        <value>word34</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word35')"/>
+        <value>word35</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word36')"/>
+        <value>word36</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word37')"/>
+        <value>word37</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word38')"/>
+        <value>word38</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word39')"/>
+        <value>word39</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word40')"/>
+        <value>word40</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word41')"/>
+        <value>word41</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word42')"/>
+        <value>word42</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word43')"/>
+        <value>word43</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word44')"/>
+        <value>word44</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word45')"/>
+        <value>word45</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word46')"/>
+        <value>word46</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word47')"/>
+        <value>word47</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word48')"/>
+        <value>word48</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word49')"/>
+        <value>word49</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word50')"/>
+        <value>word50</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word51')"/>
+        <value>word51</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word52')"/>
+        <value>word52</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word53')"/>
+        <value>word53</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word54')"/>
+        <value>word54</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word55')"/>
+        <value>word55</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word56')"/>
+        <value>word56</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word57')"/>
+        <value>word57</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word58')"/>
+        <value>word58</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word59')"/>
+        <value>word59</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_PassageWords:word60')"/>
+        <value>word60</value>
+      </item>
+    </select>
+    <input ref="/data/C6_PassageLastWordRead">
+      <label ref="jr:itext('/data/C6_PassageLastWordRead:label')"/>
+      <hint ref="jr:itext('/data/C6_PassageLastWordRead:hint')"/>
+    </input>
+    <input ref="/data/C6_PassageReadingTime">
+      <label ref="jr:itext('/data/C6_PassageReadingTime:label')"/>
+      <hint ref="jr:itext('/data/C6_PassageReadingTime:hint')"/>
+    </input>
+    <select1 ref="/data/C6_ComprehensionQuestion1">
+      <label ref="jr:itext('/data/C6_ComprehensionQuestion1:label')"/>
+      <hint ref="jr:itext('/data/C6_ComprehensionQuestion1:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:notRead')"/>
+        <value>notRead</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C6_ComprehensionQuestion2">
+      <label ref="jr:itext('/data/C6_ComprehensionQuestion2:label')"/>
+      <hint ref="jr:itext('/data/C6_ComprehensionQuestion2:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:notRead')"/>
+        <value>notRead</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C6_ComprehensionQuestion3">
+      <label ref="jr:itext('/data/C6_ComprehensionQuestion3:label')"/>
+      <hint ref="jr:itext('/data/C6_ComprehensionQuestion3:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:notRead')"/>
+        <value>notRead</value>
+      </item>
+    </select1>
+    <select1 ref="/data/C6_ComprehensionQuestion4">
+      <label ref="jr:itext('/data/C6_ComprehensionQuestion4:label')"/>
+      <hint ref="jr:itext('/data/C6_ComprehensionQuestion4:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:correct')"/>
+        <value>correct</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:incorrect')"/>
+        <value>incorrect</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:noResponse')"/>
+        <value>noResponse</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/C6_ComprehensionQuestions:notRead')"/>
+        <value>notRead</value>
+      </item>
+    </select1>
+  </h:body>
+</h:html>

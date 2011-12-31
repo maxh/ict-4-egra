@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>EGRA C8</h:title>
+    <model>
+      <instance>
+        <data id="EGRA_C8_v1">
+	  <!--START:C0_StudentInformation-->
+          <C0_StudentID/>
+	  <!--END:C0_StudentInformation-->
+	  <!--START:C8_Dictation_v1-->
+          <C8_Instructions/>
+          <C8_Picture/>
+	  <!--END:C8_Dictation_v1-->
+	  <!--data-->
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+	  <!--START:C0_StudentInformation-->
+          <text id="/data/C0_StudentID:label">
+            <value>Enter the student's ID number:</value>
+          </text>
+          <text id="/data/C0_StudentID:hint">
+            <value/>
+          </text>
+	  <!--END:C0_StudentInformation-->
+	  <!--START:C8_Dictation_v1-->
+          <text id="/data/C8_Instructions:label">
+            <value>Component 8: Dictation</value>
+          </text>
+          <text id="/data/C8_Instructions:hint">
+            <value>Turn the student response form to the last, lined page for writing, and place it in front of the student.</value>
+          </text>
+          <text id="/data/C8_Picture:label">
+            <value>Please take a picture of the student's response sheet.</value>
+          </text>
+          <text id="/data/C8_Picture:hint">
+            <value/>
+          </text>
+	  <!--END:C8_Dictation_v1-->
+	  <!--translation-->
+        </translation>
+      </itext>
+      <!--START:C0_StudentInformation-->
+      <bind nodeset="/data/C0_StudentID" type="int" required="true()"/>
+      <!--END:C0_StudentInformation-->
+      <!--START:C8_Dictation_v1-->
+      <bind nodeset="/data/C8_Instructions" type="string" readonly="true()"/>
+      <bind nodeset="/data/C8_Picture" type="binary" required="true()"/>
+      <!--END:C8_Dictation_v1-->
+      <!--bind-->
+    </model>
+  </h:head>
+  <h:body>
+    <!--START:C0_StudentInformation-->
+    <group>
+    <label>Student Information</label>
+       <input ref="/data/C0_StudentID">
+         <label ref="jr:itext('/data/C0_StudentID:label')"/>
+         <hint ref="jr:itext('/data/C0_StudentID:hint')"/>
+       </input>
+    </group>
+    <!--END:C0_StudentInformation-->
+    <!--START:C8_Dictation_v1-->
+    <group>
+    <label>Component 8: Dictation</label>
+       <input ref="/data/C8_Instructions">
+         <label ref="jr:itext('/data/C8_Instructions:label')"/>
+         <hint ref="jr:itext('/data/C8_Instructions:hint')"/>
+       </input>
+       <upload ref="/data/C8_Picture" mediatype="image/*">
+         <label ref="jr:itext('/data/C8_Picture:label')"/>
+         <hint ref="jr:itext('/data/C8_Picture:hint')"/>
+       </upload>
+    </group>
+    <!--END:C8_Dictation_v1-->
+    <!--body-->
+  </h:body>
+</h:html>
